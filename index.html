@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-17 Tue 20:31 -->
+<!-- 2020-03-17 Tue 20:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Science</title>
@@ -253,20 +253,20 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf8d5251">1. Rec Engine</a>
+<li><a href="#org482eeff">1. Rec Engine</a>
 <ul>
-<li><a href="#org2c1ea9e">1.1. <span class="todo TODO">TODO</span> Deduplication</a>
+<li><a href="#orga7f33e2">1.1. <span class="todo TODO">TODO</span> Deduplication</a>
 <ul>
-<li><a href="#org07ce713">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
-<li><a href="#org046222c">1.1.2. <span class="todo TODO">TODO</span> Recommender Integration</a></li>
-<li><a href="#org86fdaef">1.1.3. <span class="todo TODO">TODO</span> Deploying to production</a></li>
+<li><a href="#org69ecf3e">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
+<li><a href="#org5b5fc18">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
+<li><a href="#orge076a78">1.1.3. <span class="todo TODO">TODO</span> Deploying to production</a></li>
 </ul>
 </li>
-<li><a href="#orge73fc01">1.2. <span class="todo TODO">TODO</span> My Travel Plans</a></li>
-<li><a href="#org5d1df66">1.3. <span class="todo TODO">TODO</span> Limitations</a></li>
-<li><a href="#org70fa129">1.4. Errands</a>
+<li><a href="#org38acf25">1.2. <span class="todo TODO">TODO</span> My Travel Plans</a></li>
+<li><a href="#org3952c36">1.3. <span class="todo TODO">TODO</span> Limitations</a></li>
+<li><a href="#orge60ca8c">1.4. Errands</a>
 <ul>
-<li><a href="#org880f404">1.4.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#orgb9276d0">1.4.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
 </ul>
 </li>
 </ul>
@@ -275,8 +275,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf8d5251" class="outline-2">
-<h2 id="orgf8d5251"><span class="section-number-2">1</span> Rec Engine</h2>
+<div id="outline-container-org482eeff" class="outline-2">
+<h2 id="org482eeff"><span class="section-number-2">1</span> Rec Engine</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><p>
@@ -335,12 +335,12 @@ Estimations
 </table></li>
 </ul>
 </div>
-<div id="outline-container-org2c1ea9e" class="outline-3">
-<h3 id="org2c1ea9e"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Deduplication</h3>
+<div id="outline-container-orga7f33e2" class="outline-3">
+<h3 id="orga7f33e2"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Deduplication</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-org07ce713" class="outline-4">
-<h4 id="org07ce713"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
+<div id="outline-container-org69ecf3e" class="outline-4">
+<h4 id="org69ecf3e"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
@@ -348,7 +348,7 @@ Solution: finding duplicates using 3 columns: event_time, venue, city. if data i
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org2125665"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
+<li><a id="org6d28f91"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
 <div class="outline-text-5" id="text-1-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
@@ -501,7 +501,7 @@ yey_event_lookup
 </div>
 </li>
 
-<li><a id="orgf5f0af2"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
+<li><a id="orga29eaf6"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
 <div class="outline-text-5" id="text-1-1-1-2">
 <p>
 Caveats:
@@ -520,7 +520,7 @@ Caveats:
 </div>
 </li>
 
-<li><a id="org3c22d30"></a><span class="done DONE">DONE</span> Testing<br />
+<li><a id="org46bc96e"></a><span class="done DONE">DONE</span> Testing<br />
 <div class="outline-text-5" id="text-1-1-1-3">
 <ul class="org-ul">
 <li>Details:
@@ -622,12 +622,12 @@ So, yey_event_clean table must be a major table that will provide users with eve
 </ol>
 </div>
 
-<div id="outline-container-org046222c" class="outline-4">
-<h4 id="org046222c"><span class="section-number-4">1.1.2</span> <span class="todo TODO">TODO</span> Recommender Integration</h4>
+<div id="outline-container-org5b5fc18" class="outline-4">
+<h4 id="org5b5fc18"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
 <div class="outline-text-4" id="text-1-1-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgbe1d452"></a><span class="done DONE">DONE</span> Implementation<br />
+<li><a id="org2b9dcd1"></a><span class="done DONE">DONE</span> Implementation<br />
 <div class="outline-text-5" id="text-1-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -644,48 +644,49 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 </ol>
 </div>
 
-<div id="outline-container-org86fdaef" class="outline-4">
-<h4 id="org86fdaef"><span class="section-number-4">1.1.3</span> <span class="todo TODO">TODO</span> Deploying to production</h4>
+<div id="outline-container-orge076a78" class="outline-4">
+<h4 id="orge076a78"><span class="section-number-4">1.1.3</span> <span class="todo TODO">TODO</span> Deploying to production</h4>
 <div class="outline-text-4" id="text-1-1-3">
 </div>
 <ol class="org-ol">
-<li><a id="org5f0a18b"></a><span class="todo TODO">TODO</span> Creating new tables<br />
+<li><a id="org9387ed7"></a><span class="todo TODO">TODO</span> Creating new tables<br />
 <div class="outline-text-5" id="text-1-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </li>
-<li><a id="orgfddd1a4"></a><span class="todo TODO">TODO</span> Integrating into the process<br />
+<li><a id="org5f71e07"></a><span class="todo TODO">TODO</span> Integrating into the process<br />
 <div class="outline-text-5" id="text-1-1-3-2">
 <ul class="org-ul">
-<li>we should deduplicate events and update yey_event_clean table before recommender process.</li>
+<li>unifying under a single script.</li>
 </ul>
 </div>
 </li>
+<li><a id="org36b5c7a"></a><span class="todo TODO">TODO</span> Testing<br /></li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-orge73fc01" class="outline-3">
-<h3 id="orge73fc01"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> My Travel Plans</h3>
+<div id="outline-container-org38acf25" class="outline-3">
+<h3 id="org38acf25"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> My Travel Plans</h3>
 </div>
-<div id="outline-container-org5d1df66" class="outline-3">
-<h3 id="org5d1df66"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Limitations</h3>
+<div id="outline-container-org3952c36" class="outline-3">
+<h3 id="org3952c36"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Limitations</h3>
 </div>
-<div id="outline-container-org70fa129" class="outline-3">
-<h3 id="org70fa129"><span class="section-number-3">1.4</span> Errands</h3>
+<div id="outline-container-orge60ca8c" class="outline-3">
+<h3 id="orge60ca8c"><span class="section-number-3">1.4</span> Errands</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org880f404" class="outline-4">
-<h4 id="org880f404"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
+<div id="outline-container-orgb9276d0" class="outline-4">
+<h4 id="orgb9276d0"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-03-17 Tue 20:31</p>
+<p class="date">Created: 2020-03-17 Tue 20:33</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
