@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-30 Mon 20:37 -->
+<!-- 2020-04-03 პარ 13:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Science</title>
@@ -200,50 +202,28 @@
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -253,28 +233,28 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0a202a2">1. Rec Engine</a>
+<li><a href="#org8c7f2f0">1. Rec Engine</a>
 <ul>
-<li><a href="#org82fd42f">1.1. <span class="done DONE">DONE</span> Deduplication</a>
+<li><a href="#org5e8b272">1.1. <span class="done DONE">DONE</span> Deduplication</a>
 <ul>
-<li><a href="#org174d2b8">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
-<li><a href="#orgf55f4cb">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
-<li><a href="#org52e7402">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
+<li><a href="#org197671c">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
+<li><a href="#org485dd8f">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
+<li><a href="#org0b094bf">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
 </ul>
 </li>
-<li><a href="#org9d859f0">1.2. <span class="todo TODO">TODO</span> My Travel Plans</a>
+<li><a href="#org88e3705">1.2. <span class="done DONE">DONE</span> My Travel Plans</a>
 <ul>
-<li><a href="#org0f2a406">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
-<li><a href="#orgb72c212">1.2.2. <span class="todo TODO">TODO</span> implementation</a></li>
-<li><a href="#org2d4cf5a">1.2.3. <span class="done DONE">DONE</span> The Result \ Testing</a></li>
+<li><a href="#org0dca9ec">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
+<li><a href="#org77f28ea">1.2.2. <span class="done DONE">DONE</span> implementation</a></li>
+<li><a href="#org47790ca">1.2.3. <span class="done DONE">DONE</span> The Result \ Testing</a></li>
 </ul>
 </li>
-<li><a href="#org561b277">1.3. <span class="todo TODO">TODO</span> Limitations</a></li>
-<li><a href="#orgc4f47f9">1.4. Errands</a>
+<li><a href="#org0844dc5">1.3. <span class="todo TODO">TODO</span> Limitations</a></li>
+<li><a href="#org4298796">1.4. Errands</a>
 <ul>
-<li><a href="#org11268bf">1.4.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
-<li><a href="#orgd4fa0c6">1.4.2. <span class="todo TODO">TODO</span> cleanup branches</a></li>
-<li><a href="#orgbb87981">1.4.3. <span class="todo TODO">TODO</span> More events than tickets after recommendation process(?), dig into the issue.</a></li>
+<li><a href="#org0a23b11">1.4.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#org465f965">1.4.2. <span class="todo TODO">TODO</span> cleanup branches</a></li>
+<li><a href="#orgdfb0ae9">1.4.3. <span class="todo TODO">TODO</span> More events than tickets after recommendation process(?), dig into the issue.</a></li>
 </ul>
 </li>
 </ul>
@@ -283,8 +263,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org0a202a2" class="outline-2">
-<h2 id="org0a202a2"><span class="section-number-2">1</span> Rec Engine</h2>
+<div id="outline-container-org8c7f2f0" class="outline-2">
+<h2 id="org8c7f2f0"><span class="section-number-2">1</span> Rec Engine</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><p>
@@ -343,12 +323,12 @@ Estimations
 </table></li>
 </ul>
 </div>
-<div id="outline-container-org82fd42f" class="outline-3">
-<h3 id="org82fd42f"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
+<div id="outline-container-org5e8b272" class="outline-3">
+<h3 id="org5e8b272"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-org174d2b8" class="outline-4">
-<h4 id="org174d2b8"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
+<div id="outline-container-org197671c" class="outline-4">
+<h4 id="org197671c"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
@@ -356,7 +336,7 @@ Solution: finding duplicates using 3 columns: event_time, venue, city. if data i
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org33f53eb"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
+<li><a id="org0088a77"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
 <div class="outline-text-5" id="text-1-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
@@ -365,7 +345,7 @@ Idea in general: split yey_event into to tables -&gt; yey_event_clean, yey_event
 <ul class="org-ul">
 <li>yey_event_clean 
 <ul class="org-ul">
-<li>original events with unique id's and duplicate links to lookup table.<br /></li>
+<li>original events with unique id&rsquo;s and duplicate links to lookup table.<br /></li>
 <li>duplicate - 1/0</li>
 </ul></li>
 <li>yey_event_lookup
@@ -509,7 +489,7 @@ yey_event_lookup
 </div>
 </li>
 
-<li><a id="org87dd039"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
+<li><a id="orgf23709a"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
 <div class="outline-text-5" id="text-1-1-1-2">
 <p>
 Caveats:
@@ -521,31 +501,31 @@ Caveats:
 </ul></li>
 <li>Airbnb:
 <ol class="org-ol">
-<li>We don't have duplicates, for now.</li>
-<li>Current solution won't work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
+<li>We don&rsquo;t have duplicates, for now.</li>
+<li>Current solution won&rsquo;t work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
 </ol></li>
 </ul>
 </div>
 </li>
 
-<li><a id="org57d51da"></a><span class="done DONE">DONE</span> Testing<br />
+<li><a id="org17f0da6"></a><span class="done DONE">DONE</span> Testing<br />
 <div class="outline-text-5" id="text-1-1-1-3">
 <ul class="org-ul">
 <li>Details:
-Some extensive refactoring and testing has been done. I'm satisfied with the current result.<br />
+Some extensive refactoring and testing has been done. I&rsquo;m satisfied with the current result.<br />
 <ul class="org-ul">
 <li><p>
 SQL for extra tests:
 </p>
 <div class="org-src-container">
-<pre class="src src-sql"><span style="color: #3a81c3; font-weight: bold;">SELECT</span> city,
-       venue,
-       event_time,
-       event_source_id,
-       <span style="color: #3a81c3;">COUNT</span><span style="color: #3a81c3;">(</span>*<span style="color: #3a81c3;">)</span>
-<span style="color: #3a81c3; font-weight: bold;">FROM</span> yey_event_clean
-<span style="color: #3a81c3; font-weight: bold;">GROUP</span> <span style="color: #3a81c3; font-weight: bold;">BY</span> city, venue, event_time, event_source_id
-<span style="color: #3a81c3; font-weight: bold;">HAVING</span> <span style="color: #3a81c3;">COUNT</span><span style="color: #3a81c3;">(</span>*<span style="color: #3a81c3;">)</span> &gt; <span style="color: #4e3163;">1</span>;
+<pre class="src src-sql">         <span style="color: #e45649;">SELECT</span> city,
+                venue,
+                event_time,
+                event_source_id,
+                <span style="color: #a626a4;">COUNT</span>(*)
+         <span style="color: #e45649;">FROM</span> yey_event_clean
+         <span style="color: #e45649;">GROUP</span> <span style="color: #e45649;">BY</span> city, venue, event_time, event_source_id
+         <span style="color: #e45649;">HAVING</span> <span style="color: #a626a4;">COUNT</span>(*) &gt; <span style="color: #da8548; font-weight: bold;">1</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -612,12 +592,12 @@ Result
 </ul></li>
 
 <li><p>
-So, yey_event_clean table must be a major table that will provide users with events, it's clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
+So, yey_event_clean table must be a major table that will provide users with events, it&rsquo;s clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
 </p>
 <div class="org-src-container">
-<pre class="src src-sql"><span style="color: #3a81c3; font-weight: bold;">SELECT</span> *
-<span style="color: #3a81c3; font-weight: bold;">FROM</span> yey_event_clean
-<span style="color: #3a81c3; font-weight: bold;">WHERE</span> event_time <span style="color: #3a81c3; font-weight: bold;">IS</span> <span style="color: #3a81c3; font-weight: bold;">NULL</span>;
+<pre class="src src-sql">         <span style="color: #e45649;">SELECT</span> *
+         <span style="color: #e45649;">FROM</span> yey_event_clean
+         <span style="color: #e45649;">WHERE</span> event_time <span style="color: #e45649;">IS</span> <span style="color: #e45649;">NULL</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -630,12 +610,12 @@ So, yey_event_clean table must be a major table that will provide users with eve
 </ol>
 </div>
 
-<div id="outline-container-orgf55f4cb" class="outline-4">
-<h4 id="orgf55f4cb"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
+<div id="outline-container-org485dd8f" class="outline-4">
+<h4 id="org485dd8f"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
 <div class="outline-text-4" id="text-1-1-2">
 </div>
 <ol class="org-ol">
-<li><a id="org84aaa11"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
+<li><a id="org1202c63"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
 <div class="outline-text-5" id="text-1-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -645,48 +625,48 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 <li>querying events through yey_event_clean</li>
 <li>joining yey_ticket event_id on yey_event_lookup id upon querying tickets!</li>
 </ul></li>
-<li>outliers: somehow some events tend to differ in terms of date by 1 day, they're obviously duplicates.</li>
+<li>outliers: somehow some events tend to differ in terms of date by 1 day, they&rsquo;re obviously duplicates.</li>
 </ul>
 </div>
 </li>
 </ol>
 </div>
 
-<div id="outline-container-org52e7402" class="outline-4">
-<h4 id="org52e7402"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
+<div id="outline-container-org0b094bf" class="outline-4">
+<h4 id="org0b094bf"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
 <div class="outline-text-4" id="text-1-1-3">
 </div>
 <ol class="org-ol">
-<li><a id="org6a33992"></a><span class="done DONE">DONE</span> Creating new tables<br />
+<li><a id="org3802d73"></a><span class="done DONE">DONE</span> Creating new tables<br />
 <div class="outline-text-5" id="text-1-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </li>
-<li><a id="orgd6d6921"></a><span class="done DONE">DONE</span> Integrating into the process<br />
+<li><a id="org02c669c"></a><span class="done DONE">DONE</span> Integrating into the process<br />
 <div class="outline-text-5" id="text-1-1-3-2">
 <ul class="org-ul">
 <li>unifying under a single script.</li>
 </ul>
 </div>
 </li>
-<li><a id="orgc5d6280"></a><span class="done DONE">DONE</span> Testing<br /></li>
+<li><a id="orgee51f6b"></a><span class="done DONE">DONE</span> Testing<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org9d859f0" class="outline-3">
-<h3 id="org9d859f0"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> My Travel Plans</h3>
+<div id="outline-container-org88e3705" class="outline-3">
+<h3 id="org88e3705"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> My Travel Plans</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Decision - in case of travel destinations send 6 events from tr/destinations.
 </p>
 </div>
-<div id="outline-container-org0f2a406" class="outline-4">
-<h4 id="org0f2a406"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
+<div id="outline-container-org0dca9ec" class="outline-4">
+<h4 id="org0dca9ec"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
 </div>
-<div id="outline-container-orgb72c212" class="outline-4">
-<h4 id="orgb72c212"><span class="section-number-4">1.2.2</span> <span class="todo TODO">TODO</span> implementation</h4>
+<div id="outline-container-org77f28ea" class="outline-4">
+<h4 id="org77f28ea"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> implementation</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
 <li>6 from preferred location / 6 from travel plans</li>
@@ -746,7 +726,7 @@ But it will become something like:
 </table>
 <p>
 etc.
-which isn't a good solution.
+which isn&rsquo;t a good solution.
 </p></li>
 
 <li><p>
@@ -820,8 +800,8 @@ events</li>
 </div>
 </div>
 
-<div id="outline-container-org2d4cf5a" class="outline-4">
-<h4 id="org2d4cf5a"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> The Result \ Testing</h4>
+<div id="outline-container-org47790ca" class="outline-4">
+<h4 id="org47790ca"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> The Result \ Testing</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>So, the process is implemented and works fine, just distribution of events has to be re-adjusted.</li>
@@ -910,35 +890,94 @@ yey_useremailqueue_tickets:
 Yes, right now I realized we need them sorted by user_id, travel [True comes first]
 </p></li>
 <li>Limit event to X
-So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user's inbox.</li>
+So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user&rsquo;s inbox.</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org561b277" class="outline-3">
-<h3 id="org561b277"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Limitations</h3>
+<div id="outline-container-org0844dc5" class="outline-3">
+<h3 id="org0844dc5"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Limitations</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>How many offers a user gets on average for the same event?</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-sql"><span style="color: #e45649;">SELECT</span> useremailqueue_id, user_id, array_agg(ticket_id)
+<span style="color: #e45649;">FROM</span> yey_useremailqueue_tickets ut
+         <span style="color: #e45649;">JOIN</span> yey_useremailqueue ue <span style="color: #e45649;">on</span> ut.useremailqueue_id = ue.id
+<span style="color: #e45649;">GROUP</span> <span style="color: #e45649;">BY</span> useremailqueue_id, user_id;
+</pre>
 </div>
-<div id="outline-container-orgc4f47f9" class="outline-3">
-<h3 id="orgc4f47f9"><span class="section-number-3">1.4</span> Errands</h3>
+<ul class="org-ul">
+<li>How to limit the same event offer for the user?
+a new lookup table</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">user_id</th>
+<th scope="col" class="org-right">event_id</th>
+<th scope="col" class="org-right">counter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">100</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">101</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">102</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">103</td>
+<td class="org-right">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org4298796" class="outline-3">
+<h3 id="org4298796"><span class="section-number-3">1.4</span> Errands</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org11268bf" class="outline-4">
-<h4 id="org11268bf"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
+<div id="outline-container-org0a23b11" class="outline-4">
+<h4 id="org0a23b11"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
 </div>
-<div id="outline-container-orgd4fa0c6" class="outline-4">
-<h4 id="orgd4fa0c6"><span class="section-number-4">1.4.2</span> <span class="todo TODO">TODO</span> cleanup branches</h4>
+<div id="outline-container-org465f965" class="outline-4">
+<h4 id="org465f965"><span class="section-number-4">1.4.2</span> <span class="todo TODO">TODO</span> cleanup branches</h4>
 </div>
-<div id="outline-container-orgbb87981" class="outline-4">
-<h4 id="orgbb87981"><span class="section-number-4">1.4.3</span> <span class="todo TODO">TODO</span> More events than tickets after recommendation process(?), dig into the issue.</h4>
+<div id="outline-container-orgdfb0ae9" class="outline-4">
+<h4 id="orgdfb0ae9"><span class="section-number-4">1.4.3</span> <span class="todo TODO">TODO</span> More events than tickets after recommendation process(?), dig into the issue.</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-03-30 Mon 20:37</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2020-04-03 პარ 13:35</p>
 </div>
 </body>
 </html>
