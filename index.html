@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-07 სამ 14:49 -->
+<!-- 2020-04-09 ხუთ 19:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Science</title>
@@ -255,39 +254,42 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc6fc673">1. Rec Engine</a>
+<li><a href="#orgc49a931">1. Rec Engine</a>
 <ul>
-<li><a href="#org633adb4">1.1. <span class="done DONE">DONE</span> Deduplication</a>
+<li><a href="#orged3a96d">1.1. <span class="done DONE">DONE</span> Deduplication</a>
 <ul>
-<li><a href="#orgb3616ca">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
-<li><a href="#orgfaee692">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
-<li><a href="#org2506cf1">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
+<li><a href="#org6c5ff49">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
+<li><a href="#org06446e0">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
+<li><a href="#org71c324e">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
 </ul>
 </li>
-<li><a href="#org64a826c">1.2. <span class="done DONE">DONE</span> My Travel Plans</a>
+<li><a href="#org1abc90c">1.2. <span class="done DONE">DONE</span> My Travel Plans</a>
 <ul>
-<li><a href="#org2ddbf87">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
-<li><a href="#orgd6dc3d7">1.2.2. <span class="done DONE">DONE</span> implementation</a></li>
-<li><a href="#org7a1d8c0">1.2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
+<li><a href="#org870d9f4">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
+<li><a href="#orge40a9d4">1.2.2. <span class="done DONE">DONE</span> implementation</a></li>
+<li><a href="#orgb017bb1">1.2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
 </ul>
 </li>
-<li><a href="#org5be9751">1.3. <span class="done DONE">DONE</span> Limitations</a>
+<li><a href="#orgb09ebf0">1.3. <span class="done DONE">DONE</span> Limitations</a>
 <ul>
-<li><a href="#org7a4f374">1.3.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#orgea54664">1.3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
-<li><a href="#orga0956b7">1.3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#org6513937">1.3.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#org5f547c6">1.3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
+<li><a href="#orgf5f16c6">1.3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#orgdda7cdd">1.4. QA</a>
+<li><a href="#org2284ddd">1.4. <span class="todo TODO">TODO</span> subcategory extraction</a></li>
+<li><a href="#org1760f3c">1.5. QA</a>
 <ul>
-<li><a href="#orgf1b8e90">1.4.1. <span class="todo TODO">TODO</span> More events than tickets</a></li>
-<li><a href="#org3b5bbd6">1.4.2. <span class="todo TODO">TODO</span> &#x2026;</a></li>
+<li><a href="#org2ce0e6a">1.5.1. <span class="todo TODO">TODO</span> More events than tickets</a></li>
+<li><a href="#org5be84d6">1.5.2. <span class="todo TODO">TODO</span> The Structural Exploration</a></li>
+<li><a href="#org6f82782">1.5.3. <span class="todo TODO">TODO</span> Data</a></li>
+<li><a href="#org480b962">1.5.4. <span class="todo TODO">TODO</span> Process</a></li>
 </ul>
 </li>
-<li><a href="#org9537e9d">1.5. Errands</a>
+<li><a href="#org2450035">1.6. Errands</a>
 <ul>
-<li><a href="#orgd6cf2b4">1.5.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
-<li><a href="#orgc149593">1.5.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
+<li><a href="#org67c3c4e">1.6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#org42e3237">1.6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
 </ul>
 </li>
 </ul>
@@ -296,8 +298,8 @@
 </div>
 </div>
 
-<div id="outline-container-orgc6fc673" class="outline-2">
-<h2 id="orgc6fc673"><span class="section-number-2">1</span> Rec Engine</h2>
+<div id="outline-container-orgc49a931" class="outline-2">
+<h2 id="orgc49a931"><span class="section-number-2">1</span> Rec Engine</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><p>
@@ -356,12 +358,12 @@ Estimations
 </table></li>
 </ul>
 </div>
-<div id="outline-container-org633adb4" class="outline-3">
-<h3 id="org633adb4"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
+<div id="outline-container-orged3a96d" class="outline-3">
+<h3 id="orged3a96d"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orgb3616ca" class="outline-4">
-<h4 id="orgb3616ca"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
+<div id="outline-container-org6c5ff49" class="outline-4">
+<h4 id="org6c5ff49"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
@@ -369,7 +371,7 @@ Solution: finding duplicates using 3 columns: event_time, venue, city. if data i
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org8d016f7"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
+<li><a id="orgcb53a4f"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
 <div class="outline-text-5" id="text-1-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
@@ -522,7 +524,7 @@ yey_event_lookup
 </div>
 </li>
 
-<li><a id="org44d4f55"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
+<li><a id="org066545c"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
 <div class="outline-text-5" id="text-1-1-1-2">
 <p>
 Caveats:
@@ -541,7 +543,7 @@ Caveats:
 </div>
 </li>
 
-<li><a id="org3f5f9f1"></a><span class="done DONE">DONE</span> Testing<br />
+<li><a id="orgba1c292"></a><span class="done DONE">DONE</span> Testing<br />
 <div class="outline-text-5" id="text-1-1-1-3">
 <ul class="org-ul">
 <li>Details:
@@ -643,12 +645,12 @@ So, yey_event_clean table must be a major table that will provide users with eve
 </ol>
 </div>
 
-<div id="outline-container-orgfaee692" class="outline-4">
-<h4 id="orgfaee692"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
+<div id="outline-container-org06446e0" class="outline-4">
+<h4 id="org06446e0"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
 <div class="outline-text-4" id="text-1-1-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgfce13c9"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
+<li><a id="org9f6896e"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
 <div class="outline-text-5" id="text-1-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -665,41 +667,41 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 </ol>
 </div>
 
-<div id="outline-container-org2506cf1" class="outline-4">
-<h4 id="org2506cf1"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
+<div id="outline-container-org71c324e" class="outline-4">
+<h4 id="org71c324e"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
 <div class="outline-text-4" id="text-1-1-3">
 </div>
 <ol class="org-ol">
-<li><a id="org9b39101"></a><span class="done DONE">DONE</span> Creating new tables<br />
+<li><a id="org9223c3f"></a><span class="done DONE">DONE</span> Creating new tables<br />
 <div class="outline-text-5" id="text-1-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </li>
-<li><a id="orgaf2db24"></a><span class="done DONE">DONE</span> Integrating into the process<br />
+<li><a id="orgae1590f"></a><span class="done DONE">DONE</span> Integrating into the process<br />
 <div class="outline-text-5" id="text-1-1-3-2">
 <ul class="org-ul">
 <li>unifying under a single script.</li>
 </ul>
 </div>
 </li>
-<li><a id="org8fbce6a"></a><span class="done DONE">DONE</span> Testing<br /></li>
+<li><a id="org28cea20"></a><span class="done DONE">DONE</span> Testing<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org64a826c" class="outline-3">
-<h3 id="org64a826c"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> My Travel Plans</h3>
+<div id="outline-container-org1abc90c" class="outline-3">
+<h3 id="org1abc90c"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> My Travel Plans</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Decision - in case of travel destinations send 6 events from tr/destinations.
 </p>
 </div>
-<div id="outline-container-org2ddbf87" class="outline-4">
-<h4 id="org2ddbf87"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
+<div id="outline-container-org870d9f4" class="outline-4">
+<h4 id="org870d9f4"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
 </div>
-<div id="outline-container-orgd6dc3d7" class="outline-4">
-<h4 id="orgd6dc3d7"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> implementation</h4>
+<div id="outline-container-orge40a9d4" class="outline-4">
+<h4 id="orge40a9d4"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> implementation</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
 <li>6 from preferred location / 6 from travel plans</li>
@@ -833,8 +835,8 @@ events</li>
 </div>
 </div>
 
-<div id="outline-container-org7a1d8c0" class="outline-4">
-<h4 id="org7a1d8c0"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> Result\Testing</h4>
+<div id="outline-container-orgb017bb1" class="outline-4">
+<h4 id="orgb017bb1"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> Result\Testing</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>So, the process is implemented and works fine, just distribution of events has to be re-adjusted.</li>
@@ -929,13 +931,13 @@ So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAV
 </div>
 </div>
 
-<div id="outline-container-org5be9751" class="outline-3">
-<h3 id="org5be9751"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Limitations</h3>
+<div id="outline-container-orgb09ebf0" class="outline-3">
+<h3 id="orgb09ebf0"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Limitations</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
 
-<div id="outline-container-org7a4f374" class="outline-4">
-<h4 id="org7a4f374"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Analysis</h4>
+<div id="outline-container-org6513937" class="outline-4">
+<h4 id="org6513937"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Analysis</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <ul class="org-ul">
 <li>How many offers a user gets on average for the same event?</li>
@@ -1021,8 +1023,8 @@ emails.</li>
 </div>
 </div>
 
-<div id="outline-container-orgea54664" class="outline-4">
-<h4 id="orgea54664"><span class="section-number-4">1.3.2</span> <span class="done _X_">[X]</span> Proposed solution</h4>
+<div id="outline-container-org5f547c6" class="outline-4">
+<h4 id="org5f547c6"><span class="section-number-4">1.3.2</span> <span class="done _X_">[X]</span> Proposed solution</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <ul class="org-ul">
 <li>How to limit the same event offer for the user? <br />
@@ -1078,8 +1080,8 @@ recommendation process according this table.</li>
 </div>
 </div>
 
-<div id="outline-container-orga0956b7" class="outline-4">
-<h4 id="orga0956b7"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
+<div id="outline-container-orgf5f16c6" class="outline-4">
+<h4 id="orgf5f16c6"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
 <div class="outline-text-4" id="text-1-3-3">
 <p>
 So, the following solution was implemented - instead of creating a new table, a
@@ -1143,13 +1145,22 @@ each new small feature.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdda7cdd" class="outline-3">
-<h3 id="orgdda7cdd"><span class="section-number-3">1.4</span> QA</h3>
+<div id="outline-container-org2284ddd" class="outline-3">
+<h3 id="org2284ddd"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> subcategory extraction</h3>
 <div class="outline-text-3" id="text-1-4">
+<p>
+yey_event title -&gt; subcategory_id
+</p>
 </div>
-<div id="outline-container-orgf1b8e90" class="outline-4">
-<h4 id="orgf1b8e90"><span class="section-number-4">1.4.1</span> <span class="todo TODO">TODO</span> More events than tickets</h4>
-<div class="outline-text-4" id="text-1-4-1">
+</div>
+
+<div id="outline-container-org1760f3c" class="outline-3">
+<h3 id="org1760f3c"><span class="section-number-3">1.5</span> QA</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-org2ce0e6a" class="outline-4">
+<h4 id="org2ce0e6a"><span class="section-number-4">1.5.1</span> <span class="todo TODO">TODO</span> More events than tickets</h4>
+<div class="outline-text-4" id="text-1-5-1">
 <p>
 Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don&rsquo;t have
 corresponding tickets in the <b><b>yey_tickets</b></b> table. This issue doesn&rsquo;t seem to
@@ -1158,27 +1169,39 @@ according ticket availability upon query into the recommender system.
 </p>
 </div>
 </div>
-<div id="outline-container-org3b5bbd6" class="outline-4">
-<h4 id="org3b5bbd6"><span class="section-number-4">1.4.2</span> <span class="todo TODO">TODO</span> &#x2026;</h4>
+<div id="outline-container-org5be84d6" class="outline-4">
+<h4 id="org5be84d6"><span class="section-number-4">1.5.2</span> <span class="todo TODO">TODO</span> The Structural Exploration</h4>
+</div>
+<div id="outline-container-org6f82782" class="outline-4">
+<h4 id="org6f82782"><span class="section-number-4">1.5.3</span> <span class="todo TODO">TODO</span> Data</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<p>
+Check if all column that are used in the process contain relevant data
+</p>
+</div>
+</div>
+<div id="outline-container-org480b962" class="outline-4">
+<h4 id="org480b962"><span class="section-number-4">1.5.4</span> <span class="todo TODO">TODO</span> Process</h4>
 </div>
 </div>
 
-<div id="outline-container-org9537e9d" class="outline-3">
-<h3 id="org9537e9d"><span class="section-number-3">1.5</span> Errands</h3>
-<div class="outline-text-3" id="text-1-5">
+
+<div id="outline-container-org2450035" class="outline-3">
+<h3 id="org2450035"><span class="section-number-3">1.6</span> Errands</h3>
+<div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-orgd6cf2b4" class="outline-4">
-<h4 id="orgd6cf2b4"><span class="section-number-4">1.5.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
+<div id="outline-container-org67c3c4e" class="outline-4">
+<h4 id="org67c3c4e"><span class="section-number-4">1.6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
 </div>
-<div id="outline-container-orgc149593" class="outline-4">
-<h4 id="orgc149593"><span class="section-number-4">1.5.2</span> <span class="done DONE">DONE</span> cleanup branches</h4>
+<div id="outline-container-org42e3237" class="outline-4">
+<h4 id="org42e3237"><span class="section-number-4">1.6.2</span> <span class="done DONE">DONE</span> cleanup branches</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-04-07 სამ 14:49</p>
+<p class="date">Created: 2020-04-09 ხუთ 19:14</p>
 </div>
 </body>
 </html>
