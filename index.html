@@ -5,7 +5,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-29 ოთხ 15:42 -->
+<!-- 2020-04-29 ოთხ 15:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Engineering</title>
@@ -259,94 +259,94 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb9dd13a">1. <span class="done DONE">DONE</span> Deduplication</a>
+<li><a href="#org8a61b62">1. <span class="done DONE">DONE</span> Deduplication</a>
 <ul>
-<li><a href="#org7eb60c3">1.1. <span class="done DONE">DONE</span> Deduplication Module</a>
+<li><a href="#orgdc0e12c">1.1. <span class="done DONE">DONE</span> Deduplication Module</a>
 <ul>
-<li><a href="#org73ea0a2">1.1.1. <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</a></li>
-<li><a href="#orga77cd93">1.1.2. <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</a></li>
-<li><a href="#org202e782">1.1.3. <span class="done DONE">DONE</span> Testing</a></li>
+<li><a href="#org9901872">1.1.1. <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</a></li>
+<li><a href="#org64d42e3">1.1.2. <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</a></li>
+<li><a href="#org19e2b28">1.1.3. <span class="done DONE">DONE</span> Testing</a></li>
 </ul>
 </li>
-<li><a href="#org1fde69a">1.2. <span class="done DONE">DONE</span> Recommender Integration</a>
+<li><a href="#org5b1900c">1.2. <span class="done DONE">DONE</span> Recommender Integration</a>
 <ul>
-<li><a href="#org78e7344">1.2.1. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#org654ed05">1.2.1. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#org2b845dc">1.3. <span class="done DONE">DONE</span> Deploying to production</a>
+<li><a href="#org7daf42b">1.3. <span class="done DONE">DONE</span> Deploying to production</a>
 <ul>
-<li><a href="#org08a1d01">1.3.1. <span class="done DONE">DONE</span> Creating new tables</a></li>
-<li><a href="#org344e4ed">1.3.2. <span class="done DONE">DONE</span> Integrating into the process</a></li>
-<li><a href="#org47b4d93">1.3.3. <span class="done DONE">DONE</span> Testing</a></li>
+<li><a href="#orgad7b7b3">1.3.1. <span class="done DONE">DONE</span> Creating new tables</a></li>
+<li><a href="#orge0430df">1.3.2. <span class="done DONE">DONE</span> Integrating into the process</a></li>
+<li><a href="#orgd3b5083">1.3.3. <span class="done DONE">DONE</span> Testing</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org8d470d9">2. <span class="done DONE">DONE</span> My Travel Plans</a>
+<li><a href="#orgd2c65f6">2. <span class="done DONE">DONE</span> My Travel Plans</a>
 <ul>
-<li><a href="#org3293242">2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
-<li><a href="#org1762734">2.2. <span class="done DONE">DONE</span> implementation</a></li>
-<li><a href="#org55ffbc9">2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
+<li><a href="#org24c4122">2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
+<li><a href="#orgdaea33c">2.2. <span class="done DONE">DONE</span> implementation</a></li>
+<li><a href="#orgacb96fe">2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
 </ul>
 </li>
-<li><a href="#orgabcd79a">3. <span class="done DONE">DONE</span> Limitations</a>
+<li><a href="#org2d04f46">3. <span class="done DONE">DONE</span> Limitations</a>
 <ul>
-<li><a href="#orgee6ca50">3.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#org4ff0d25">3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
-<li><a href="#org91ded41">3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#orga798083">3.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#org890a49d">3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
+<li><a href="#org89248a6">3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#org7db27e7">4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
+<li><a href="#org4f79a63">4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
 <ul>
-<li><a href="#orgbc81bba">4.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#org7371a85">4.2. <span class="done DONE">DONE</span> Implementation / Testing</a>
+<li><a href="#orgaf52a53">4.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#org0997192">4.2. <span class="done DONE">DONE</span> Implementation / Testing</a>
 <ul>
-<li><a href="#org80214d4">4.2.1. <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</a></li>
-<li><a href="#orgd20cfe3">4.2.2. <span class="done DONE">DONE</span> Subcategory extraction:</a></li>
-<li><a href="#org98529a7">4.2.3. Current state 21/04</a></li>
-<li><a href="#org51ba005">4.2.4. Notes 22/04</a></li>
+<li><a href="#org791019f">4.2.1. <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</a></li>
+<li><a href="#orgfbf48f5">4.2.2. <span class="done DONE">DONE</span> Subcategory extraction:</a></li>
+<li><a href="#org953be5c">4.2.3. Current state 21/04</a></li>
+<li><a href="#org6ba1fe7">4.2.4. Notes 22/04</a></li>
 </ul>
 </li>
-<li><a href="#org3593620">4.3. <span class="done DONE">DONE</span> Integration</a>
+<li><a href="#org291e397">4.3. <span class="done DONE">DONE</span> Integration</a>
 <ul>
-<li><a href="#org104eb1a">4.3.1. Notes 23/04</a></li>
+<li><a href="#orgade0bea">4.3.1. Notes 23/04</a></li>
 </ul>
 </li>
-<li><a href="#orgcece962">4.4. <span class="done KILL">KILL</span> Further Analysis and Report</a></li>
+<li><a href="#orgb88bed9">4.4. <span class="done DONE">DONE</span> Further Analysis and Report</a></li>
 </ul>
 </li>
-<li><a href="#org00ee1d5">5. QA</a>
+<li><a href="#orgc0d6ca5">5. QA</a>
 <ul>
-<li><a href="#org36ec73f">5.1. <span class="todo TODO">TODO</span> More events than tickets</a></li>
-<li><a href="#orgf7e7ab7">5.2. <span class="todo TODO">TODO</span> The Structural Exploration</a></li>
-<li><a href="#orgf424c55">5.3. <span class="todo TODO">TODO</span> Data</a></li>
-<li><a href="#orgb726aa7">5.4. <span class="todo TODO">TODO</span> Process</a></li>
+<li><a href="#org2378507">5.1. <span class="todo TODO">TODO</span> More events than tickets</a></li>
+<li><a href="#org830957b">5.2. <span class="todo TODO">TODO</span> The Structural Exploration</a></li>
+<li><a href="#org64fe8cf">5.3. <span class="todo TODO">TODO</span> Data</a></li>
+<li><a href="#org2a0f332">5.4. <span class="todo TODO">TODO</span> Process</a></li>
 </ul>
 </li>
-<li><a href="#org087d427">6. Errands</a>
+<li><a href="#org6e2520e">6. Errands</a>
 <ul>
-<li><a href="#org192ac86">6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
-<li><a href="#org5f25b78">6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
+<li><a href="#org85839d0">6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#org814ec9a">6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb9dd13a" class="outline-2">
-<h2 id="orgb9dd13a"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Deduplication</h2>
+<div id="outline-container-org8a61b62" class="outline-2">
+<h2 id="org8a61b62"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Deduplication</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org7eb60c3" class="outline-3">
-<h3 id="org7eb60c3"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h3>
+<div id="outline-container-orgdc0e12c" class="outline-3">
+<h3 id="orgdc0e12c"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
 Solution: finding duplicates using 3 columns: event_time, venue, city. if data in all these these match then the event is duplicate.
 </p>
 </div>
-<div id="outline-container-org73ea0a2" class="outline-4">
-<h4 id="org73ea0a2"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</h4>
+<div id="outline-container-org9901872" class="outline-4">
+<h4 id="org9901872"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
@@ -499,8 +499,8 @@ yey_event_lookup
 </div>
 </div>
 
-<div id="outline-container-orga77cd93" class="outline-4">
-<h4 id="orga77cd93"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</h4>
+<div id="outline-container-org64d42e3" class="outline-4">
+<h4 id="org64d42e3"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 Caveats:
@@ -519,8 +519,8 @@ Caveats:
 </div>
 </div>
 
-<div id="outline-container-org202e782" class="outline-4">
-<h4 id="org202e782"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Testing</h4>
+<div id="outline-container-org19e2b28" class="outline-4">
+<h4 id="org19e2b28"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Testing</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>Details:
@@ -621,12 +621,12 @@ So, yey_event_clean table must be a major table that will provide users with eve
 </div>
 </div>
 
-<div id="outline-container-org1fde69a" class="outline-3">
-<h3 id="org1fde69a"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h3>
+<div id="outline-container-org5b1900c" class="outline-3">
+<h3 id="org5b1900c"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org78e7344" class="outline-4">
-<h4 id="org78e7344"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
+<div id="outline-container-org654ed05" class="outline-4">
+<h4 id="org654ed05"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -642,43 +642,43 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 </div>
 </div>
 
-<div id="outline-container-org2b845dc" class="outline-3">
-<h3 id="org2b845dc"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Deploying to production</h3>
+<div id="outline-container-org7daf42b" class="outline-3">
+<h3 id="org7daf42b"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Deploying to production</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-org08a1d01" class="outline-4">
-<h4 id="org08a1d01"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Creating new tables</h4>
+<div id="outline-container-orgad7b7b3" class="outline-4">
+<h4 id="orgad7b7b3"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Creating new tables</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </div>
-<div id="outline-container-org344e4ed" class="outline-4">
-<h4 id="org344e4ed"><span class="section-number-4">1.3.2</span> <span class="done DONE">DONE</span> Integrating into the process</h4>
+<div id="outline-container-orge0430df" class="outline-4">
+<h4 id="orge0430df"><span class="section-number-4">1.3.2</span> <span class="done DONE">DONE</span> Integrating into the process</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <ul class="org-ul">
 <li>unifying under a single script.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org47b4d93" class="outline-4">
-<h4 id="org47b4d93"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Testing</h4>
+<div id="outline-container-orgd3b5083" class="outline-4">
+<h4 id="orgd3b5083"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Testing</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org8d470d9" class="outline-2">
-<h2 id="org8d470d9"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> My Travel Plans</h2>
+<div id="outline-container-orgd2c65f6" class="outline-2">
+<h2 id="orgd2c65f6"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> My Travel Plans</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Decision - in case of travel destinations send 6 events from tr/destinations.
 </p>
 </div>
-<div id="outline-container-org3293242" class="outline-3">
-<h3 id="org3293242"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h3>
+<div id="outline-container-org24c4122" class="outline-3">
+<h3 id="org24c4122"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h3>
 </div>
-<div id="outline-container-org1762734" class="outline-3">
-<h3 id="org1762734"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> implementation</h3>
+<div id="outline-container-orgdaea33c" class="outline-3">
+<h3 id="orgdaea33c"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> implementation</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>6 from preferred location / 6 from travel plans</li>
@@ -812,8 +812,8 @@ events</li>
 </div>
 </div>
 
-<div id="outline-container-org55ffbc9" class="outline-3">
-<h3 id="org55ffbc9"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> Result\Testing</h3>
+<div id="outline-container-orgacb96fe" class="outline-3">
+<h3 id="orgacb96fe"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> Result\Testing</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>So, the process is implemented and works fine, just distribution of events has to be re-adjusted.</li>
@@ -908,13 +908,13 @@ So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAV
 </div>
 </div>
 
-<div id="outline-container-orgabcd79a" class="outline-2">
-<h2 id="orgabcd79a"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Limitations</h2>
+<div id="outline-container-org2d04f46" class="outline-2">
+<h2 id="org2d04f46"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Limitations</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 
-<div id="outline-container-orgee6ca50" class="outline-3">
-<h3 id="orgee6ca50"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Analysis</h3>
+<div id="outline-container-orga798083" class="outline-3">
+<h3 id="orga798083"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Analysis</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>How many offers a user gets on average for the same event?</li>
@@ -1000,8 +1000,8 @@ emails.</li>
 </div>
 </div>
 
-<div id="outline-container-org4ff0d25" class="outline-3">
-<h3 id="org4ff0d25"><span class="section-number-3">3.2</span> <span class="done _X_">[X]</span> Proposed solution</h3>
+<div id="outline-container-org890a49d" class="outline-3">
+<h3 id="org890a49d"><span class="section-number-3">3.2</span> <span class="done _X_">[X]</span> Proposed solution</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>How to limit the same event offer for the user? <br />
@@ -1057,8 +1057,8 @@ recommendation process according this table.</li>
 </div>
 </div>
 
-<div id="outline-container-org91ded41" class="outline-3">
-<h3 id="org91ded41"><span class="section-number-3">3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h3>
+<div id="outline-container-org89248a6" class="outline-3">
+<h3 id="org89248a6"><span class="section-number-3">3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 So, the following solution was implemented - instead of creating a new table, a
@@ -1122,12 +1122,12 @@ each new small feature.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org7db27e7" class="outline-2">
-<h2 id="org7db27e7"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h2>
+<div id="outline-container-org4f79a63" class="outline-2">
+<h2 id="org4f79a63"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgbc81bba" class="outline-3">
-<h3 id="orgbc81bba"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Analysis</h3>
+<div id="outline-container-orgaf52a53" class="outline-3">
+<h3 id="orgaf52a53"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Analysis</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li><p>
@@ -1317,15 +1317,15 @@ Floyd in the title.</li>
 </div>
 </div>
 
-<div id="outline-container-org7371a85" class="outline-3">
-<h3 id="org7371a85"><span class="section-number-3">4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h3>
+<div id="outline-container-org0997192" class="outline-3">
+<h3 id="org0997192"><span class="section-number-3">4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
-<div id="outline-container-org80214d4" class="outline-4">
-<h4 id="org80214d4"><span class="section-number-4">4.2.1</span> <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</h4>
+<div id="outline-container-org791019f" class="outline-4">
+<h4 id="org791019f"><span class="section-number-4">4.2.1</span> <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</h4>
 </div>
-<div id="outline-container-orgd20cfe3" class="outline-4">
-<h4 id="orgd20cfe3"><span class="section-number-4">4.2.2</span> <span class="done DONE">DONE</span> Subcategory extraction:</h4>
+<div id="outline-container-orgfbf48f5" class="outline-4">
+<h4 id="orgfbf48f5"><span class="section-number-4">4.2.2</span> <span class="done DONE">DONE</span> Subcategory extraction:</h4>
 <div class="outline-text-4" id="text-4-2-2">
 <ul class="org-ul">
 <li>Test Algorithms and find the most accurate approach.</li>
@@ -1563,8 +1563,8 @@ Categories:
 </div>
 </div>
 
-<div id="outline-container-org98529a7" class="outline-4">
-<h4 id="org98529a7"><span class="section-number-4">4.2.3</span> Current state 21/04</h4>
+<div id="outline-container-org953be5c" class="outline-4">
+<h4 id="org953be5c"><span class="section-number-4">4.2.3</span> Current state 21/04</h4>
 <div class="outline-text-4" id="text-4-2-3">
 <p>
 majority of the job is complete, also exact matches have been dealt with. We no
@@ -1893,8 +1893,8 @@ Theater.
 </div>
 </div>
 
-<div id="outline-container-org51ba005" class="outline-4">
-<h4 id="org51ba005"><span class="section-number-4">4.2.4</span> Notes 22/04</h4>
+<div id="outline-container-org6ba1fe7" class="outline-4">
+<h4 id="org6ba1fe7"><span class="section-number-4">4.2.4</span> Notes 22/04</h4>
 <div class="outline-text-4" id="text-4-2-4">
 <ul class="org-ul">
 <li>Observation: yey_event_clean got 7873 unique strings in title column out of
@@ -1944,7 +1944,7 @@ Latin added to Theater category in the process of checking categories:
 
 
 <ol class="org-ol">
-<li><a id="orgeac1aed"></a>Analysis/tweaks<br />
+<li><a id="orgd7fa715"></a>Analysis/tweaks<br />
 <div class="outline-text-5" id="text-4-2-4-1">
 <ol class="org-ol">
 <li><p>
@@ -2114,15 +2114,15 @@ these cases are outliers.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org3593620" class="outline-3">
-<h3 id="org3593620"><span class="section-number-3">4.3</span> <span class="done DONE">DONE</span> Integration</h3>
+<div id="outline-container-org291e397" class="outline-3">
+<h3 id="org291e397"><span class="section-number-3">4.3</span> <span class="done DONE">DONE</span> Integration</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 Well, the source is ready, 23/04 integration into the system and final testing.
 </p>
 </div>
-<div id="outline-container-org104eb1a" class="outline-4">
-<h4 id="org104eb1a"><span class="section-number-4">4.3.1</span> Notes 23/04</h4>
+<div id="outline-container-orgade0bea" class="outline-4">
+<h4 id="orgade0bea"><span class="section-number-4">4.3.1</span> Notes 23/04</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <ul class="org-ul">
 <li>It turns out we have subcategory duplicates in <b><b>yey_subcategory</b></b>, for
@@ -2151,8 +2151,8 @@ algorithm. Commit is ready to be tested.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcece962" class="outline-3">
-<h3 id="orgcece962"><span class="section-number-3">4.4</span> <span class="done KILL">KILL</span> Further Analysis and Report</h3>
+<div id="outline-container-orgb88bed9" class="outline-3">
+<h3 id="orgb88bed9"><span class="section-number-3">4.4</span> <span class="done DONE">DONE</span> Further Analysis and Report</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Major lessons learned here:
@@ -2411,12 +2411,12 @@ Summary
 </div>
 </div>
 
-<div id="outline-container-org00ee1d5" class="outline-2">
-<h2 id="org00ee1d5"><span class="section-number-2">5</span> QA</h2>
+<div id="outline-container-orgc0d6ca5" class="outline-2">
+<h2 id="orgc0d6ca5"><span class="section-number-2">5</span> QA</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org36ec73f" class="outline-3">
-<h3 id="org36ec73f"><span class="section-number-3">5.1</span> <span class="todo TODO">TODO</span> More events than tickets</h3>
+<div id="outline-container-org2378507" class="outline-3">
+<h3 id="org2378507"><span class="section-number-3">5.1</span> <span class="todo TODO">TODO</span> More events than tickets</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don&rsquo;t have
@@ -2426,37 +2426,37 @@ according ticket availability upon query into the recommender system.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf7e7ab7" class="outline-3">
-<h3 id="orgf7e7ab7"><span class="section-number-3">5.2</span> <span class="todo TODO">TODO</span> The Structural Exploration</h3>
+<div id="outline-container-org830957b" class="outline-3">
+<h3 id="org830957b"><span class="section-number-3">5.2</span> <span class="todo TODO">TODO</span> The Structural Exploration</h3>
 </div>
-<div id="outline-container-orgf424c55" class="outline-3">
-<h3 id="orgf424c55"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Data</h3>
+<div id="outline-container-org64fe8cf" class="outline-3">
+<h3 id="org64fe8cf"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Data</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Check if all column that are used in the process contain relevant data
 </p>
 </div>
 </div>
-<div id="outline-container-orgb726aa7" class="outline-3">
-<h3 id="orgb726aa7"><span class="section-number-3">5.4</span> <span class="todo TODO">TODO</span> Process</h3>
+<div id="outline-container-org2a0f332" class="outline-3">
+<h3 id="org2a0f332"><span class="section-number-3">5.4</span> <span class="todo TODO">TODO</span> Process</h3>
 </div>
 </div>
 
-<div id="outline-container-org087d427" class="outline-2">
-<h2 id="org087d427"><span class="section-number-2">6</span> Errands</h2>
+<div id="outline-container-org6e2520e" class="outline-2">
+<h2 id="org6e2520e"><span class="section-number-2">6</span> Errands</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org192ac86" class="outline-3">
-<h3 id="org192ac86"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h3>
+<div id="outline-container-org85839d0" class="outline-3">
+<h3 id="org85839d0"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h3>
 </div>
-<div id="outline-container-org5f25b78" class="outline-3">
-<h3 id="org5f25b78"><span class="section-number-3">6.2</span> <span class="done DONE">DONE</span> cleanup branches</h3>
+<div id="outline-container-org814ec9a" class="outline-3">
+<h3 id="org814ec9a"><span class="section-number-3">6.2</span> <span class="done DONE">DONE</span> cleanup branches</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-04-29 ოთხ 15:42</p>
+<p class="date">Created: 2020-04-29 ოთხ 15:44</p>
 </div>
 </body>
 </html>
