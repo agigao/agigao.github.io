@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-29 ოთხ 15:47 -->
+<!-- 2020-05-04 Mon 15:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Engineering</title>
@@ -206,28 +204,50 @@
 <style> p{max-width:800px;}</style>
 <style> li{max-width:800px;}</style
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.cacheClassElem = elem.className;
-         elem.cacheClassTarget = target.className;
-         target.className = "code-highlighted";
-         elem.className   = "code-highlighted";
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(elem.cacheClassElem)
-         elem.className = elem.cacheClassElem;
-       if(elem.cacheClassTarget)
-         target.className = elem.cacheClassTarget;
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -259,103 +279,133 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0c93f4b">1. <span class="done DONE">DONE</span> Deduplication</a>
+<li><a href="#org073c3d7">1. <span class="done DONE">DONE</span> Deduplication</a>
 <ul>
-<li><a href="#org6e7171f">1.1. <span class="done DONE">DONE</span> Deduplication Module</a>
+<li><a href="#org565a5b5">1.1. <span class="done DONE">DONE</span> Deduplication Module</a>
 <ul>
-<li><a href="#org656bc8e">1.1.1. <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</a></li>
-<li><a href="#org04d6d3c">1.1.2. <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</a></li>
-<li><a href="#org1e0abc9">1.1.3. <span class="done DONE">DONE</span> Testing</a></li>
+<li><a href="#org7772aac">1.1.1. <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</a></li>
+<li><a href="#orgdc2f98e">1.1.2. <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</a></li>
+<li><a href="#orga99f0a0">1.1.3. <span class="done DONE">DONE</span> Testing</a></li>
 </ul>
 </li>
-<li><a href="#org96f0a8d">1.2. <span class="done DONE">DONE</span> Recommender Integration</a>
+<li><a href="#orge09daa8">1.2. <span class="done DONE">DONE</span> Recommender Integration</a>
 <ul>
-<li><a href="#orgf279aed">1.2.1. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#orgd625a41">1.2.1. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#org34f3e62">1.3. <span class="done DONE">DONE</span> Deploying to production</a>
+<li><a href="#org7000395">1.3. <span class="done DONE">DONE</span> Deploying to production</a>
 <ul>
-<li><a href="#org87296e7">1.3.1. <span class="done DONE">DONE</span> Creating new tables</a></li>
-<li><a href="#org069303f">1.3.2. <span class="done DONE">DONE</span> Integrating into the process</a></li>
-<li><a href="#org19fb209">1.3.3. <span class="done DONE">DONE</span> Testing</a></li>
+<li><a href="#orga162f81">1.3.1. <span class="done DONE">DONE</span> Creating new tables</a></li>
+<li><a href="#orgdcc3924">1.3.2. <span class="done DONE">DONE</span> Integrating into the process</a></li>
+<li><a href="#org15ae702">1.3.3. <span class="done DONE">DONE</span> Testing</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org19abce3">2. <span class="done DONE">DONE</span> My Travel Plans</a>
+<li><a href="#orgd4e7fbe">2. <span class="done DONE">DONE</span> My Travel Plans</a>
 <ul>
-<li><a href="#org44ed46c">2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
-<li><a href="#org6eef216">2.2. <span class="done DONE">DONE</span> implementation</a></li>
-<li><a href="#orgbb7effa">2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
+<li><a href="#orgeba3acf">2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
+<li><a href="#org09a41d4">2.2. <span class="done DONE">DONE</span> implementation</a></li>
+<li><a href="#orge6e3d6d">2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
 </ul>
 </li>
-<li><a href="#orgce26707">3. <span class="done DONE">DONE</span> Limitations</a>
+<li><a href="#org7571141">3. <span class="done DONE">DONE</span> Limitations</a>
 <ul>
-<li><a href="#orgf4757b4">3.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#org16a36e9">3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
-<li><a href="#org0c568ef">3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#org19bf2f3">3.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#org24ec75c">3.2. [X] Proposed solution</a></li>
+<li><a href="#orgdcbfa2c">3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#orgda614da">4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
+<li><a href="#org60ad20e">4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
 <ul>
-<li><a href="#org3627c0c">4.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#orgff036fe">4.2. <span class="done DONE">DONE</span> Implementation / Testing</a>
+<li><a href="#org9b7ed48">4.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#orgfa51d5d">4.2. <span class="done DONE">DONE</span> Implementation / Testing</a>
 <ul>
-<li><a href="#org9abbaef">4.2.1. <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</a></li>
-<li><a href="#org274f1bb">4.2.2. <span class="done DONE">DONE</span> Subcategory extraction:</a></li>
-<li><a href="#orgc25d3ad">4.2.3. Current state 21/04</a></li>
-<li><a href="#orgca0006b">4.2.4. Notes 22/04</a></li>
+<li><a href="#orgee8b549">4.2.1. <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</a></li>
+<li><a href="#orgb4c1511">4.2.2. <span class="done DONE">DONE</span> Subcategory extraction:</a></li>
+<li><a href="#org309189c">4.2.3. Current state 21/04</a></li>
+<li><a href="#org3540e71">4.2.4. Notes 22/04</a></li>
 </ul>
 </li>
-<li><a href="#org204427e">4.3. <span class="done DONE">DONE</span> Integration</a>
+<li><a href="#orga7c24ef">4.3. <span class="done DONE">DONE</span> Integration</a>
 <ul>
-<li><a href="#org5000711">4.3.1. Notes 23/04</a></li>
+<li><a href="#org3ba2463">4.3.1. Notes 23/04</a></li>
 </ul>
 </li>
-<li><a href="#org4675ee7">4.4. <span class="done DONE">DONE</span> Further Analysis and Report</a></li>
+<li><a href="#orgae68a19">4.4. <span class="done DONE">DONE</span> Further Analysis and Report</a></li>
 </ul>
 </li>
-<li><a href="#org3018742">5. QA</a>
+<li><a href="#org10d0244">5. <span class="todo TODO">TODO</span> QA</a>
 <ul>
-<li><a href="#org32097bb">5.1. <span class="todo TODO">TODO</span> More events than tickets</a></li>
-<li><a href="#orgd29e129">5.2. <span class="todo TODO">TODO</span> The Structural Exploration</a></li>
-<li><a href="#orgd65da7e">5.3. <span class="todo TODO">TODO</span> Data</a></li>
-<li><a href="#orgcd7f246">5.4. <span class="todo TODO">TODO</span> Process</a></li>
+<li><a href="#org0dd565d">5.1. <span class="done DONE">DONE</span> More events than tickets</a></li>
+<li><a href="#org8135909">5.2. <span class="done DONE">DONE</span> The Structural Exploration</a></li>
+<li><a href="#org7ef8249">5.3. <span class="todo TODO">TODO</span> Data</a></li>
+<li><a href="#orgf598d14">5.4. <span class="todo TODO">TODO</span> Go through the process</a></li>
 </ul>
 </li>
-<li><a href="#org47e1670">6. Errands</a>
+<li><a href="#orgcb272d3">6. Errands</a>
 <ul>
-<li><a href="#org71cb93b">6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
-<li><a href="#org659903f">6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
+<li><a href="#org3a28e39">6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#org9df8806">6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
+</ul>
+</li>
+<li><a href="#org3b12229">7. V2</a>
+<ul>
+<li><a href="#org12f7199">7.1. <span class="todo TODO">TODO</span> Ticket Score Normalization</a>
+<ul>
+<li><a href="#org96b790b">7.1.1. <span class="todo TODO">TODO</span> Understanding Diff. between sources - 4h</a></li>
+<li><a href="#orgea8385d">7.1.2. <span class="todo TODO">TODO</span> Report / Data Analysis - 2h</a></li>
+</ul>
+</li>
+<li><a href="#orgec806a8">7.2. <span class="todo TODO">TODO</span> Subcategory Normalization</a>
+<ul>
+<li><a href="#org56d062f">7.2.1. <span class="todo TODO">TODO</span> Statistical Report - 1h</a></li>
+<li><a href="#org2dc47c1">7.2.2. <span class="todo TODO">TODO</span> Support for Multicategory classification - 2h implementation / 5h unit testing</a></li>
+<li><a href="#orgb9598a0">7.2.3. <span class="todo TODO">TODO</span> Data collection for analysing precision / recall - 1h</a></li>
+<li><a href="#org3d36c3a">7.2.4. <span class="todo TODO">TODO</span> Cleanup: I'd be nice to get rid of typos and misspellings in yey_subcategory name column such as: Iliza Sch**L**esinger / Iliza Schesinger.</a></li>
+<li><a href="#org9e363ca">7.2.5. Ideas</a></li>
+</ul>
+</li>
+<li><a href="#orgcffe966">7.3. Left to be discussed</a>
+<ul>
+<li><a href="#orgcd7e421">7.3.1. Better logic for Event scoring (rule based)</a></li>
+<li><a href="#orgc1ccd1a">7.3.2. Better logic for ticket scoring (rule based)</a></li>
+<li><a href="#org3c6dcc9">7.3.3. AB test platform</a></li>
+<li><a href="#org9c555e0">7.3.4. Event/Ticket scoring based on ML</a></li>
+<li><a href="#org18676f4">7.3.5. Free user: narrow location by using IP to location</a></li>
+<li><a href="#org3a967a6">7.3.6. Premium users: calculation distance to location from city center? (ip to location)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0c93f4b" class="outline-2">
-<h2 id="org0c93f4b"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Deduplication</h2>
+<div id="outline-container-org073c3d7" class="outline-2">
+<h2 id="org073c3d7"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Deduplication</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org6e7171f" class="outline-3">
-<h3 id="org6e7171f"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h3>
+<div id="outline-container-org565a5b5" class="outline-3">
+<h3 id="org565a5b5"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
-Solution: finding duplicates using 3 columns: event_time, venue, city. if data in all these these match then the event is duplicate.
+Solution: finding duplicates using 3 columns: event_time, venue, city.
+if data in all these these match then the event is duplicate.
 </p>
 </div>
-<div id="outline-container-org656bc8e" class="outline-4">
-<h4 id="org656bc8e"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</h4>
+<div id="outline-container-org7772aac" class="outline-4">
+<h4 id="org7772aac"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Preliminary Exploration/Refresh</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
 I dumped the current database data to my local Postgre server.<br />
 Idea in general: split yey_event into to tables -&gt; yey_event_clean, yey_event_lookup.
 <ul class="org-ul">
-<li>yey_event_clean 
+<li>yey_event_clean
 <ul class="org-ul">
-<li>original events with unique id&rsquo;s and duplicate links to lookup table.<br /></li>
+<li>original events with unique id's and duplicate links to lookup table.<br /></li>
 <li>duplicate - 1/0</li>
 </ul></li>
 <li>yey_event_lookup
@@ -499,8 +549,8 @@ yey_event_lookup
 </div>
 </div>
 
-<div id="outline-container-org04d6d3c" class="outline-4">
-<h4 id="org04d6d3c"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</h4>
+<div id="outline-container-orgdc2f98e" class="outline-4">
+<h4 id="orgdc2f98e"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Analyse PokerNews/Airbnb</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 Caveats:
@@ -512,32 +562,32 @@ Caveats:
 </ul></li>
 <li>Airbnb:
 <ol class="org-ol">
-<li>We don&rsquo;t have duplicates, for now.</li>
-<li>Current solution won&rsquo;t work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
+<li>We don't have duplicates, for now.</li>
+<li>Current solution won't work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
 </ol></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1e0abc9" class="outline-4">
-<h4 id="org1e0abc9"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Testing</h4>
+<div id="outline-container-orga99f0a0" class="outline-4">
+<h4 id="orga99f0a0"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Testing</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>Details:
-Some extensive refactoring and testing has been done. I&rsquo;m satisfied with the current result.<br />
+Some extensive refactoring and testing has been done. I'm satisfied with the current result.<br />
 <ul class="org-ul">
 <li><p>
 SQL for extra tests:
 </p>
 <div class="org-src-container">
-<pre class="src src-sql">         <span style="color: #51afef;">SELECT</span> city,
-                venue,
-                event_time,
-                event_source_id,
-                <span style="color: #c678dd;">COUNT</span>(*)
-         <span style="color: #51afef;">FROM</span> yey_event_clean
-         <span style="color: #51afef;">GROUP</span> <span style="color: #51afef;">BY</span> city, venue, event_time, event_source_id
-         <span style="color: #51afef;">HAVING</span> <span style="color: #c678dd;">COUNT</span>(*) &gt; <span style="color: #da8548; font-weight: bold;">1</span>;
+<pre class="src src-sql"><span style="color: #268bd2; font-weight: bold;">SELECT</span> city,
+       venue,
+       event_time,
+       event_source_id,
+       <span style="color: #268bd2;">COUNT</span><span style="color: #268bd2;">(</span>*<span style="color: #268bd2;">)</span>
+<span style="color: #268bd2; font-weight: bold;">FROM</span> yey_event_clean
+<span style="color: #268bd2; font-weight: bold;">GROUP</span> <span style="color: #268bd2; font-weight: bold;">BY</span> city, venue, event_time, event_source_id
+<span style="color: #268bd2; font-weight: bold;">HAVING</span> <span style="color: #268bd2;">COUNT</span><span style="color: #268bd2;">(</span>*<span style="color: #268bd2;">)</span> &gt; <span style="color: #d75fd7;">1</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -604,12 +654,12 @@ Result
 </ul></li>
 
 <li><p>
-So, yey_event_clean table must be a major table that will provide users with events, it&rsquo;s clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
+So, yey_event_clean table must be a major table that will provide users with events, it's clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
 </p>
 <div class="org-src-container">
-<pre class="src src-sql">         <span style="color: #51afef;">SELECT</span> *
-         <span style="color: #51afef;">FROM</span> yey_event_clean
-         <span style="color: #51afef;">WHERE</span> event_time <span style="color: #51afef;">IS</span> <span style="color: #51afef;">NULL</span>;
+<pre class="src src-sql"><span style="color: #268bd2; font-weight: bold;">SELECT</span> *
+<span style="color: #268bd2; font-weight: bold;">FROM</span> yey_event_clean
+<span style="color: #268bd2; font-weight: bold;">WHERE</span> event_time <span style="color: #268bd2; font-weight: bold;">IS</span> <span style="color: #268bd2; font-weight: bold;">NULL</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -621,12 +671,12 @@ So, yey_event_clean table must be a major table that will provide users with eve
 </div>
 </div>
 
-<div id="outline-container-org96f0a8d" class="outline-3">
-<h3 id="org96f0a8d"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h3>
+<div id="outline-container-orge09daa8" class="outline-3">
+<h3 id="orge09daa8"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-orgf279aed" class="outline-4">
-<h4 id="orgf279aed"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
+<div id="outline-container-orgd625a41" class="outline-4">
+<h4 id="orgd625a41"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -636,49 +686,49 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 <li>querying events through yey_event_clean</li>
 <li>joining yey_ticket event_id on yey_event_lookup id upon querying tickets!</li>
 </ul></li>
-<li>outliers: somehow some events tend to differ in terms of date by 1 day, they&rsquo;re obviously duplicates.</li>
+<li>outliers: somehow some events tend to differ in terms of date by 1 day, they're obviously duplicates.</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org34f3e62" class="outline-3">
-<h3 id="org34f3e62"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Deploying to production</h3>
+<div id="outline-container-org7000395" class="outline-3">
+<h3 id="org7000395"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Deploying to production</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-org87296e7" class="outline-4">
-<h4 id="org87296e7"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Creating new tables</h4>
+<div id="outline-container-orga162f81" class="outline-4">
+<h4 id="orga162f81"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Creating new tables</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </div>
-<div id="outline-container-org069303f" class="outline-4">
-<h4 id="org069303f"><span class="section-number-4">1.3.2</span> <span class="done DONE">DONE</span> Integrating into the process</h4>
+<div id="outline-container-orgdcc3924" class="outline-4">
+<h4 id="orgdcc3924"><span class="section-number-4">1.3.2</span> <span class="done DONE">DONE</span> Integrating into the process</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <ul class="org-ul">
 <li>unifying under a single script.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org19fb209" class="outline-4">
-<h4 id="org19fb209"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Testing</h4>
+<div id="outline-container-org15ae702" class="outline-4">
+<h4 id="org15ae702"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Testing</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org19abce3" class="outline-2">
-<h2 id="org19abce3"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> My Travel Plans</h2>
+<div id="outline-container-orgd4e7fbe" class="outline-2">
+<h2 id="orgd4e7fbe"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> My Travel Plans</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Decision - in case of travel destinations send 6 events from tr/destinations.
 </p>
 </div>
-<div id="outline-container-org44ed46c" class="outline-3">
-<h3 id="org44ed46c"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h3>
+<div id="outline-container-orgeba3acf" class="outline-3">
+<h3 id="orgeba3acf"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h3>
 </div>
-<div id="outline-container-org6eef216" class="outline-3">
-<h3 id="org6eef216"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> implementation</h3>
+<div id="outline-container-org09a41d4" class="outline-3">
+<h3 id="org09a41d4"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> implementation</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>6 from preferred location / 6 from travel plans</li>
@@ -738,7 +788,7 @@ But it will become something like:
 </table>
 <p>
 etc.
-which isn&rsquo;t a good solution.
+which isn't a good solution.
 </p></li>
 
 <li><p>
@@ -812,8 +862,8 @@ events</li>
 </div>
 </div>
 
-<div id="outline-container-orgbb7effa" class="outline-3">
-<h3 id="orgbb7effa"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> Result\Testing</h3>
+<div id="outline-container-orge6e3d6d" class="outline-3">
+<h3 id="orge6e3d6d"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> Result\Testing</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>So, the process is implemented and works fine, just distribution of events has to be re-adjusted.</li>
@@ -902,19 +952,19 @@ yey_useremailqueue_tickets:
 Yes, right now I realized we need them sorted by user_id, travel [True comes first]
 </p></li>
 <li>Limit event to X, <br />
-So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user&rsquo;s inbox.</li>
+So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user's inbox.</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgce26707" class="outline-2">
-<h2 id="orgce26707"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Limitations</h2>
+<div id="outline-container-org7571141" class="outline-2">
+<h2 id="org7571141"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Limitations</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 
-<div id="outline-container-orgf4757b4" class="outline-3">
-<h3 id="orgf4757b4"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Analysis</h3>
+<div id="outline-container-org19bf2f3" class="outline-3">
+<h3 id="org19bf2f3"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> Analysis</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>How many offers a user gets on average for the same event?</li>
@@ -1000,8 +1050,8 @@ emails.</li>
 </div>
 </div>
 
-<div id="outline-container-org16a36e9" class="outline-3">
-<h3 id="org16a36e9"><span class="section-number-3">3.2</span> <span class="done _X_">[X]</span> Proposed solution</h3>
+<div id="outline-container-org24ec75c" class="outline-3">
+<h3 id="org24ec75c"><span class="section-number-3">3.2</span> [X] Proposed solution</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>How to limit the same event offer for the user? <br />
@@ -1057,8 +1107,8 @@ recommendation process according this table.</li>
 </div>
 </div>
 
-<div id="outline-container-org0c568ef" class="outline-3">
-<h3 id="org0c568ef"><span class="section-number-3">3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h3>
+<div id="outline-container-orgdcbfa2c" class="outline-3">
+<h3 id="orgdcbfa2c"><span class="section-number-3">3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 So, the following solution was implemented - instead of creating a new table, a
@@ -1122,12 +1172,12 @@ each new small feature.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgda614da" class="outline-2">
-<h2 id="orgda614da"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h2>
+<div id="outline-container-org60ad20e" class="outline-2">
+<h2 id="org60ad20e"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org3627c0c" class="outline-3">
-<h3 id="org3627c0c"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Analysis</h3>
+<div id="outline-container-org9b7ed48" class="outline-3">
+<h3 id="org9b7ed48"><span class="section-number-3">4.1</span> <span class="done DONE">DONE</span> Analysis</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li><p>
@@ -1175,22 +1225,22 @@ yey_event title -&gt; subcategory_id
 Exploration
 </p>
 <div class="org-src-container">
-<pre class="src src-sql"><span style="color: #51afef;">SELECT</span> <span style="color: #51afef;">data</span>.*, cat.<span style="color: #51afef;">name</span> <span style="color: #51afef;">as</span> event_category_name
-         <span style="color: #51afef;">FROM</span> (<span style="color: #51afef;">SELECT</span> <span style="color: #5B6268;">--yec.link,</span>
-                      events.title          <span style="color: #51afef;">as</span> events_title,
-                      subcat.id             <span style="color: #51afef;">as</span> subcat_id,
-                      subcat.<span style="color: #51afef;">name</span>           <span style="color: #51afef;">as</span> category_name,
-                      <span style="color: #5B6268;">-- events.subcategory_id as events_subcategory_id,</span>
-                      events.category_id    <span style="color: #51afef;">as</span> event_category_id,
-                      cat.id                <span style="color: #51afef;">as</span> cat_id,
-                      cat.<span style="color: #51afef;">name</span>              <span style="color: #51afef;">as</span> cat_name
-               <span style="color: #51afef;">FROM</span> yey_event_clean <span style="color: #51afef;">as</span> events
-                        <span style="color: #51afef;">JOIN</span> yey_subcategory <span style="color: #51afef;">as</span> subcat
-                             <span style="color: #51afef;">on</span> events.title <span style="color: #51afef;">LIKE</span> <span style="color: #98be65;">'%'</span> || subcat.<span style="color: #51afef;">name</span> || <span style="color: #98be65;">'%'</span>
-                        <span style="color: #51afef;">JOIN</span> yey_category cat <span style="color: #51afef;">on</span> subcat.category_id = cat.id
-                  <span style="color: #51afef;">WHERE</span> events.category_id &lt;&gt; subcat.category_id <span style="color: #5B6268;">-- comment out for complete list</span>
-              ) <span style="color: #51afef;">as</span> <span style="color: #51afef;">data</span>
-                  <span style="color: #51afef;">JOIN</span> yey_category cat <span style="color: #51afef;">on</span> <span style="color: #51afef;">data</span>.event_category_id = cat.id
+<pre class="src src-sql"><span style="color: #268bd2; font-weight: bold;">SELECT</span> <span style="color: #268bd2; font-weight: bold;">data</span>.*, cat.<span style="color: #268bd2; font-weight: bold;">name</span> <span style="color: #268bd2; font-weight: bold;">as</span> event_category_name
+         <span style="color: #268bd2; font-weight: bold;">FROM</span> <span style="color: #268bd2;">(</span><span style="color: #268bd2; font-weight: bold;">SELECT</span> <span style="color: #008787; background-color: #262626;">--yec.link,</span>
+                      events.title          <span style="color: #268bd2; font-weight: bold;">as</span> events_title,
+                      subcat.id             <span style="color: #268bd2; font-weight: bold;">as</span> subcat_id,
+                      subcat.<span style="color: #268bd2; font-weight: bold;">name</span>           <span style="color: #268bd2; font-weight: bold;">as</span> category_name,
+                      <span style="color: #008787; background-color: #262626;">-- events.subcategory_id as events_subcategory_id,</span>
+                      events.category_id    <span style="color: #268bd2; font-weight: bold;">as</span> event_category_id,
+                      cat.id                <span style="color: #268bd2; font-weight: bold;">as</span> cat_id,
+                      cat.<span style="color: #268bd2; font-weight: bold;">name</span>              <span style="color: #268bd2; font-weight: bold;">as</span> cat_name
+               <span style="color: #268bd2; font-weight: bold;">FROM</span> yey_event_clean <span style="color: #268bd2; font-weight: bold;">as</span> events
+                        <span style="color: #268bd2; font-weight: bold;">JOIN</span> yey_subcategory <span style="color: #268bd2; font-weight: bold;">as</span> subcat
+                             <span style="color: #268bd2; font-weight: bold;">on</span> events.title <span style="color: #268bd2; font-weight: bold;">LIKE</span> <span style="color: #2aa198;">'%'</span> || subcat.<span style="color: #268bd2; font-weight: bold;">name</span> || <span style="color: #2aa198;">'%'</span>
+                        <span style="color: #268bd2; font-weight: bold;">JOIN</span> yey_category cat <span style="color: #268bd2; font-weight: bold;">on</span> subcat.category_id = cat.id
+                  <span style="color: #268bd2; font-weight: bold;">WHERE</span> events.category_id &lt;&gt; subcat.category_id <span style="color: #008787; background-color: #262626;">-- comment out for complete list</span>
+              <span style="color: #268bd2;">)</span> <span style="color: #268bd2; font-weight: bold;">as</span> <span style="color: #268bd2; font-weight: bold;">data</span>
+                  <span style="color: #268bd2; font-weight: bold;">JOIN</span> yey_category cat <span style="color: #268bd2; font-weight: bold;">on</span> <span style="color: #268bd2; font-weight: bold;">data</span>.event_category_id = cat.id
 </pre>
 </div></li>
 <li>Result</li>
@@ -1304,7 +1354,7 @@ Theater - <a href="https://www.stubhub.com/houston-symphony-tickets/performer/16
 
 <li>Levenstein and his peers
 They solve another kind of problem - how many changes one needs for string a
-to make it identical to b. We&rsquo;re not looking for string equality, as title
+to make it identical to b. We're not looking for string equality, as title
 will always be larger than subcategory name.
 <ul class="org-ul">
 <li>Our problem is solved by the following approach: find <b><b>longest common substring similarity</b></b>, what % of
@@ -1317,15 +1367,15 @@ Floyd in the title.</li>
 </div>
 </div>
 
-<div id="outline-container-orgff036fe" class="outline-3">
-<h3 id="orgff036fe"><span class="section-number-3">4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h3>
+<div id="outline-container-orgfa51d5d" class="outline-3">
+<h3 id="orgfa51d5d"><span class="section-number-3">4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
-<div id="outline-container-org9abbaef" class="outline-4">
-<h4 id="org9abbaef"><span class="section-number-4">4.2.1</span> <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</h4>
+<div id="outline-container-orgee8b549" class="outline-4">
+<h4 id="orgee8b549"><span class="section-number-4">4.2.1</span> <span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.</h4>
 </div>
-<div id="outline-container-org274f1bb" class="outline-4">
-<h4 id="org274f1bb"><span class="section-number-4">4.2.2</span> <span class="done DONE">DONE</span> Subcategory extraction:</h4>
+<div id="outline-container-orgb4c1511" class="outline-4">
+<h4 id="orgb4c1511"><span class="section-number-4">4.2.2</span> <span class="done DONE">DONE</span> Subcategory extraction:</h4>
 <div class="outline-text-4" id="text-4-2-2">
 <ul class="org-ul">
 <li>Test Algorithms and find the most accurate approach.</li>
@@ -1339,7 +1389,7 @@ Floyd in the title.</li>
 
 <li>What happens if for example we have Alabama Crimson Tide in basketball and football.
 <ul class="org-ul">
-<li>Umm, we compare both, categories as well, so, it&rsquo;ll filter them out.</li>
+<li>Umm, we compare both, categories as well, so, it'll filter them out.</li>
 </ul></li>
 
 <li>Check all mismatches in event_caregory id and category id
@@ -1349,7 +1399,7 @@ Floyd in the title.</li>
 
 <li>What happens if we have overlay of events/categories?
 <ul class="org-ul">
-<li>We won&rsquo;t, anymore.</li>
+<li>We won't, anymore.</li>
 </ul></li>
 
 <li>General idea:
@@ -1563,8 +1613,8 @@ Categories:
 </div>
 </div>
 
-<div id="outline-container-orgc25d3ad" class="outline-4">
-<h4 id="orgc25d3ad"><span class="section-number-4">4.2.3</span> Current state 21/04</h4>
+<div id="outline-container-org309189c" class="outline-4">
+<h4 id="org309189c"><span class="section-number-4">4.2.3</span> Current state 21/04</h4>
 <div class="outline-text-4" id="text-4-2-3">
 <p>
 majority of the job is complete, also exact matches have been dealt with. We no
@@ -1873,28 +1923,28 @@ Theater.
 <li>Example (a sneak peek):</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #51afef;">for</span> t <span style="color: #51afef;">in</span> combinations(title, <span style="color: #c678dd;">len</span>(name.split())):
-    <span style="color: #dcaeea;">sim</span> = td.jaro_winkler.normalized_similarity(t, name)
-    <span style="color: #51afef;">if</span> sim &gt; <span style="color: #da8548; font-weight: bold;">0.0</span>:
-        <span style="color: #51afef;">print</span>(f<span style="color: #98be65;">'Similarity: {sim}, {t} - {name}'</span>)
+<pre class="src src-python"><span style="color: #268bd2; font-weight: bold;">for</span> t <span style="color: #268bd2; font-weight: bold;">in</span> combinations<span style="color: #268bd2;">(</span>title, <span style="color: #268bd2;">len</span><span style="color: #d75fd7;">(</span>name.split<span style="color: #2aa198;">()</span><span style="color: #d75fd7;">)</span><span style="color: #268bd2;">)</span>:
+    <span style="color: #8787d7;">sim</span> = td.jaro_winkler.normalized_similarity<span style="color: #268bd2;">(</span>t, name<span style="color: #268bd2;">)</span>
+    <span style="color: #268bd2; font-weight: bold;">if</span> sim &gt; <span style="color: #d75fd7;">0</span>.<span style="color: #d75fd7;">0</span>:
+        <span style="color: #268bd2; font-weight: bold;">print</span><span style="color: #268bd2;">(</span>f<span style="color: #2aa198;">'Similarity: {sim}, {t} - {name}'</span><span style="color: #268bd2;">)</span>
 
-<span style="color: #98be65;">"""</span>
-<span style="color: #98be65;">Similarity: 1.0, Alabama Crimson Tide - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.6025030525030525, Crimson Tide Football - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.44439775910364143, Tide Football vs. - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.5666666666666667, Football vs. Georgia - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.4750000000000001, vs. Georgia Bulldogs - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.45518518518518514, Georgia Bulldogs Football - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.3813725490196078, Bulldogs Football - Alabama Crimson Tide</span>
-<span style="color: #98be65;">Similarity: 0.39722222222222214, Football - Alabama Crimson Tide</span>
-<span style="color: #98be65;">"""</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">Similarity: 1.0, Alabama Crimson Tide - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.6025030525030525, Crimson Tide Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.44439775910364143, Tide Football vs. - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.5666666666666667, Football vs. Georgia - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.4750000000000001, vs. Georgia Bulldogs - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.45518518518518514, Georgia Bulldogs Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.3813725490196078, Bulldogs Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.39722222222222214, Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">"""</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgca0006b" class="outline-4">
-<h4 id="orgca0006b"><span class="section-number-4">4.2.4</span> Notes 22/04</h4>
+<div id="outline-container-org3540e71" class="outline-4">
+<h4 id="org3540e71"><span class="section-number-4">4.2.4</span> Notes 22/04</h4>
 <div class="outline-text-4" id="text-4-2-4">
 <ul class="org-ul">
 <li>Observation: yey_event_clean got 7873 unique strings in title column out of
@@ -1944,14 +1994,14 @@ Latin added to Theater category in the process of checking categories:
 
 
 <ol class="org-ol">
-<li><a id="org6326011"></a>Analysis/tweaks<br />
+<li><a id="org67e812c"></a>Analysis/tweaks<br />
 <div class="outline-text-5" id="text-4-2-4-1">
 <ol class="org-ol">
 <li><p>
 first version - using full yey_event table
 </p>
 <div class="org-src-container">
-<pre class="src src-bash">python exploration.py  2419,35s user 1,30s system 99% cpu 40:24,63 total
+<pre class="src src-bash">python exploration.py  <span style="color: #d75fd7;">2419,35s</span> user <span style="color: #d75fd7;">1,30s</span> system <span style="color: #d75fd7;">99%</span> cpu <span style="color: #d75fd7;">40:24,63</span> total
 </pre>
 </div></li>
 <li><p>
@@ -1959,7 +2009,7 @@ second version - using unique dataframe filtered through titles and
 then joined over title.
 </p>
 <div class="org-src-container">
-<pre class="src src-bash">python exploration.py  396,12s user 0,44s system 99% cpu 6:36,65 total
+<pre class="src src-bash">python exploration.py  <span style="color: #d75fd7;">396,12s</span> user <span style="color: #d75fd7;">0,44s</span> system <span style="color: #d75fd7;">99%</span> cpu <span style="color: #d75fd7;">6:36,65</span> total
 </pre>
 </div>
 <p>
@@ -1972,40 +2022,40 @@ almost 7 fold.
 I think similarity check [technically] works quite quite well,
 eventually I settled down on Levenstein algorithm after couple of
 tricks in the process. Instead of checking name directly in the title,
-I&rsquo;m creating n combinations out of title and then checking using
+I'm creating n combinations out of title and then checking using
 the algorithm, which basically measures a number of changes that are
 required to make 2 strings equal.
 </p>
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #dcaeea;">title</span> = <span style="color: #98be65;">'Sacramento River Cats at Las Vegas Aviators'</span>
-<span style="color: #dcaeea;">name</span> = <span style="color: #98be65;">'Sacremento River Cats'</span>
+<pre class="src src-python"><span style="color: #8787d7;">title</span> = <span style="color: #2aa198;">'Sacramento River Cats at Las Vegas Aviators'</span>
+<span style="color: #8787d7;">name</span> = <span style="color: #2aa198;">'Sacremento River Cats'</span>
 
-<span style="color: #dcaeea;">combs</span> = combinations(title, name);
+<span style="color: #8787d7;">combs</span> = combinations<span style="color: #268bd2;">(</span>title, name<span style="color: #268bd2;">)</span>;
 combs
-<span style="color: #5B6268;"># </span><span style="color: #5B6268;">Here we got combinations out of title</span>
-<span style="color: #5B6268;"># </span><span style="color: #5B6268;">number of element in the combinations == number of elements in the name.</span>
-<span style="color: #98be65;">"""</span>
-<span style="color: #98be65;">['Sacramento River Cats',</span>
-<span style="color: #98be65;">'River Cats at',</span>
-<span style="color: #98be65;">'Cats at Las',</span>
-<span style="color: #98be65;">'at Las Vegas',</span>
-<span style="color: #98be65;">'Las Vegas Aviators',</span>
-<span style="color: #98be65;">'Vegas Aviators',</span>
-<span style="color: #98be65;">'Aviators']</span>
-<span style="color: #98be65;">"""</span>
-<span style="color: #51afef;">for</span> c <span style="color: #51afef;">in</span> combs:
-    <span style="color: #dcaeea;">sim</span> = td.levenshtein.normalized_similarity(c, name)
-    <span style="color: #51afef;">print</span>(f<span style="color: #98be65;">'Similarity: {sim}, {c} - {name}'</span>)
+<span style="color: #008787; background-color: #262626;"># </span><span style="color: #008787; background-color: #262626;">Here we got combinations out of title</span>
+<span style="color: #008787; background-color: #262626;"># </span><span style="color: #008787; background-color: #262626;">number of element in the combinations == number of elements in the name.</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">['Sacramento River Cats',</span>
+<span style="color: #2aa198;">'River Cats at',</span>
+<span style="color: #2aa198;">'Cats at Las',</span>
+<span style="color: #2aa198;">'at Las Vegas',</span>
+<span style="color: #2aa198;">'Las Vegas Aviators',</span>
+<span style="color: #2aa198;">'Vegas Aviators',</span>
+<span style="color: #2aa198;">'Aviators']</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #268bd2; font-weight: bold;">for</span> c <span style="color: #268bd2; font-weight: bold;">in</span> combs:
+    <span style="color: #8787d7;">sim</span> = td.levenshtein.normalized_similarity<span style="color: #268bd2;">(</span>c, name<span style="color: #268bd2;">)</span>
+    <span style="color: #268bd2; font-weight: bold;">print</span><span style="color: #268bd2;">(</span>f<span style="color: #2aa198;">'Similarity: {sim}, {c} - {name}'</span><span style="color: #268bd2;">)</span>
 
-<span style="color: #98be65;">"""</span>
-<span style="color: #98be65;">Similarity: 0.9523809523809523, Sacramento River Cats - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.33333333333333337, River Cats at - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.2857142857142857, Cats at Las - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.23809523809523814, at Las Vegas - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.23809523809523814, Las Vegas Aviators - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.19047619047619047, Vegas Aviators - Sacremento River Cats</span>
-<span style="color: #98be65;">Similarity: 0.19047619047619047, Aviators - Sacremento River Cats</span>
-<span style="color: #98be65;">"""</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">Similarity: 0.9523809523809523, Sacramento River Cats - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.33333333333333337, River Cats at - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.2857142857142857, Cats at Las - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.23809523809523814, at Las Vegas - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.23809523809523814, Las Vegas Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.19047619047619047, Vegas Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.19047619047619047, Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">"""</span>
 </pre>
 </div></li>
 </ul></li>
@@ -2039,7 +2089,7 @@ required:
 </tr>
 
 <tr>
-<td class="org-left">Ain&rsquo;t Too Proud</td>
+<td class="org-left">Ain't Too Proud</td>
 <td class="org-left">Aint Too Proud Baltimore</td>
 <td class="org-right">0.9333333333333333</td>
 </tr>
@@ -2063,7 +2113,7 @@ required:
 </tr>
 
 <tr>
-<td class="org-left">The Band&rsquo;s Visit</td>
+<td class="org-left">The Band's Visit</td>
 <td class="org-left">The Bands Visit Richmond Tickets (Rescheduled from May 3, 2020)</td>
 <td class="org-right">0.9375</td>
 </tr>
@@ -2114,15 +2164,15 @@ these cases are outliers.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org204427e" class="outline-3">
-<h3 id="org204427e"><span class="section-number-3">4.3</span> <span class="done DONE">DONE</span> Integration</h3>
+<div id="outline-container-orga7c24ef" class="outline-3">
+<h3 id="orga7c24ef"><span class="section-number-3">4.3</span> <span class="done DONE">DONE</span> Integration</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 Well, the source is ready, 23/04 integration into the system and final testing.
 </p>
 </div>
-<div id="outline-container-org5000711" class="outline-4">
-<h4 id="org5000711"><span class="section-number-4">4.3.1</span> Notes 23/04</h4>
+<div id="outline-container-org3ba2463" class="outline-4">
+<h4 id="org3ba2463"><span class="section-number-4">4.3.1</span> Notes 23/04</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <ul class="org-ul">
 <li>It turns out we have subcategory duplicates in <b><b>yey_subcategory</b></b>, for
@@ -2151,8 +2201,8 @@ algorithm. Commit is ready to be tested.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org4675ee7" class="outline-3">
-<h3 id="org4675ee7"><span class="section-number-3">4.4</span> <span class="done DONE">DONE</span> Further Analysis and Report</h3>
+<div id="outline-container-orgae68a19" class="outline-3">
+<h3 id="orgae68a19"><span class="section-number-3">4.4</span> <span class="done DONE">DONE</span> Further Analysis and Report</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 Major lessons learned here:
@@ -2160,9 +2210,10 @@ Major lessons learned here:
 <ol class="org-ol">
 <li>We need to go through subcategories and check for typos and alike.</li>
 <li>We might have to take some hit and miss matches to avoid false positives as much as possible, for example in small words single character mismatch =&gt; similarity below 0.9, but that is supposed to be tackled by introduced jaro winkler algorithm into the system, on top of Levenshtein.</li>
-<li>Absolute majority of matches don&rsquo;t require algorithmic check as subcategory names are mostly substrings of titles - 92.4%, 232 out of 251.</li>
-<li>BUT 7.6% of similarities found by employing algorithms means 203 events
-categorized *_properly_, allegedly.</li>
+<li>Absolute majority of matches don't require algorithmic check as subcategory
+names are mostly substrings of titles - 92.4%, 232 out of 251 [unique subcategories].</li>
+<li>BUT 7.6% of similarities [19 in total] found by employing algorithms
+translates into 203 events, overall.</li>
 
 <li><p>
 (Unique) similarities caught by algorithms, if 0.8 &lt; sim &lt; 0.9 -&gt; we also
@@ -2290,7 +2341,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">134</td>
 <td class="org-left">Aint Too Proud New York</td>
 <td class="org-left">Aint Too Proud</td>
-<td class="org-left">Ain&rsquo;t Too Proud</td>
+<td class="org-left">Ain't Too Proud</td>
 <td class="org-right">0.933333</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2335,7 +2386,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">152</td>
 <td class="org-left">The Bands Visit Durham</td>
 <td class="org-left">The Bands Visit</td>
-<td class="org-left">The Band&rsquo;s Visit</td>
+<td class="org-left">The Band's Visit</td>
 <td class="org-right">0.937500</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2344,7 +2395,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">172</td>
 <td class="org-left">Chris DElia</td>
 <td class="org-left">Chris DElia</td>
-<td class="org-left">Chris D&rsquo;Elia</td>
+<td class="org-left">Chris D'Elia</td>
 <td class="org-right">0.916667</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2383,7 +2434,7 @@ Summary
 <thead>
 <tr>
 <th scope="col" class="org-left">Type of match</th>
-<th scope="col" class="org-right">Number of matches</th>
+<th scope="col" class="org-right">Number of unique matches</th>
 </tr>
 </thead>
 <tbody>
@@ -2411,52 +2462,189 @@ Summary
 </div>
 </div>
 
-<div id="outline-container-org3018742" class="outline-2">
-<h2 id="org3018742"><span class="section-number-2">5</span> QA</h2>
+<div id="outline-container-org10d0244" class="outline-2">
+<h2 id="org10d0244"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> QA</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org32097bb" class="outline-3">
-<h3 id="org32097bb"><span class="section-number-3">5.1</span> <span class="todo TODO">TODO</span> More events than tickets</h3>
+<div id="outline-container-org0dd565d" class="outline-3">
+<h3 id="org0dd565d"><span class="section-number-3">5.1</span> <span class="done DONE">DONE</span> More events than tickets</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
-Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don&rsquo;t have
-corresponding tickets in the <b><b>yey_tickets</b></b> table. This issue doesn&rsquo;t seem to
+Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don't have
+corresponding tickets in the <b><b>yey_tickets</b></b> table. This issue doesn't seem to
 affect <b><b>yey_events_clean</b></b> table though. But we might have to clean events
 according ticket availability upon query into the recommender system.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd29e129" class="outline-3">
-<h3 id="orgd29e129"><span class="section-number-3">5.2</span> <span class="todo TODO">TODO</span> The Structural Exploration</h3>
+<div id="outline-container-org8135909" class="outline-3">
+<h3 id="org8135909"><span class="section-number-3">5.2</span> <span class="done DONE">DONE</span> The Structural Exploration</h3>
+<div class="outline-text-3" id="text-5-2">
 </div>
-<div id="outline-container-orgd65da7e" class="outline-3">
-<h3 id="orgd65da7e"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Data</h3>
+</div>
+<div id="outline-container-org7ef8249" class="outline-3">
+<h3 id="org7ef8249"><span class="section-number-3">5.3</span> <span class="todo TODO">TODO</span> Data</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 Check if all column that are used in the process contain relevant data
 </p>
 </div>
 </div>
-<div id="outline-container-orgcd7f246" class="outline-3">
-<h3 id="orgcd7f246"><span class="section-number-3">5.4</span> <span class="todo TODO">TODO</span> Process</h3>
+<div id="outline-container-orgf598d14" class="outline-3">
+<h3 id="orgf598d14"><span class="section-number-3">5.4</span> <span class="todo TODO">TODO</span> Go through the process</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+Well, we can slowly move to Test Driven Development and introduce tests, but it'll take time.
+</p>
+</div>
 </div>
 </div>
 
-<div id="outline-container-org47e1670" class="outline-2">
-<h2 id="org47e1670"><span class="section-number-2">6</span> Errands</h2>
+<div id="outline-container-orgcb272d3" class="outline-2">
+<h2 id="orgcb272d3"><span class="section-number-2">6</span> Errands</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org71cb93b" class="outline-3">
-<h3 id="org71cb93b"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h3>
+<div id="outline-container-org3a28e39" class="outline-3">
+<h3 id="org3a28e39"><span class="section-number-3">6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h3>
 </div>
-<div id="outline-container-org659903f" class="outline-3">
-<h3 id="org659903f"><span class="section-number-3">6.2</span> <span class="done DONE">DONE</span> cleanup branches</h3>
+<div id="outline-container-org9df8806" class="outline-3">
+<h3 id="org9df8806"><span class="section-number-3">6.2</span> <span class="done DONE">DONE</span> cleanup branches</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org3b12229" class="outline-2">
+<h2 id="org3b12229"><span class="section-number-2">7</span> V2</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org12f7199" class="outline-3">
+<h3 id="org12f7199"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> Ticket Score Normalization</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org96b790b" class="outline-4">
+<h4 id="org96b790b"><span class="section-number-4">7.1.1</span> <span class="todo TODO">TODO</span> Understanding Diff. between sources - 4h</h4>
+</div>
+<div id="outline-container-orgea8385d" class="outline-4">
+<h4 id="orgea8385d"><span class="section-number-4">7.1.2</span> <span class="todo TODO">TODO</span> Report / Data Analysis - 2h</h4>
+</div>
+</div>
+<div id="outline-container-orgec806a8" class="outline-3">
+<h3 id="orgec806a8"><span class="section-number-3">7.2</span> <span class="todo TODO">TODO</span> Subcategory Normalization</h3>
+<div class="outline-text-3" id="text-7-2">
+</div>
+<div id="outline-container-org56d062f" class="outline-4">
+<h4 id="org56d062f"><span class="section-number-4">7.2.1</span> <span class="todo TODO">TODO</span> Statistical Report - 1h</h4>
+<div class="outline-text-4" id="text-7-2-1">
+<p>
+Check % of exact matches, % of algorithmic match, % of no match, % of matches with more than one candidate with high similarity score.
+</p>
+</div>
+</div>
+<div id="outline-container-org2dc47c1" class="outline-4">
+<h4 id="org2dc47c1"><span class="section-number-4">7.2.2</span> <span class="todo TODO">TODO</span> Support for Multicategory classification - 2h implementation / 5h unit testing</h4>
+</div>
+<div id="outline-container-orgb9598a0" class="outline-4">
+<h4 id="orgb9598a0"><span class="section-number-4">7.2.3</span> <span class="todo TODO">TODO</span> Data collection for analysing precision / recall - 1h</h4>
+<div class="outline-text-4" id="text-7-2-3">
+<p>
+There'll be false positives in the extact matches as well, so we need to review the whole extraction process outcome.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d36c3a" class="outline-4">
+<h4 id="org3d36c3a"><span class="section-number-4">7.2.4</span> <span class="todo TODO">TODO</span> Cleanup: I'd be nice to get rid of typos and misspellings in yey_subcategory name column such as: Iliza Sch**L**esinger / Iliza Schesinger.</h4>
+</div>
+<div id="outline-container-org9e363ca" class="outline-4">
+<h4 id="org9e363ca"><span class="section-number-4">7.2.5</span> Ideas</h4>
+<div class="outline-text-4" id="text-7-2-5">
+</div>
+<ol class="org-ol">
+<li><a id="orge52ac1d"></a>Swap the category/subcategory scraping strategy [scrapers]<br />
+<div class="outline-text-5" id="text-7-2-5-1">
+<p>
+Instead of going top to bottom and gabbing a top level category during scraping, we go the other way around.<br />
+For example: Theater and Arts / Comedy / Gabriel Iglesias: [1, 2, 3]
+</p>
+<ul class="org-ul">
+<li>Current way: we get a category id from the top level - Theater and Arts, subcategory id stays null.</li>
+<li>A proposed solution:
+<ul class="org-ul">
+<li>At first get subcategory from the bottom level: 3</li>
+<li>And category - from the one before it: 2</li>
+<li>The result: subcategory_name - Gabriel Iglesias, category: Comedy<br />
+Exactly the way it's mapped in our yey_subcategory table.</li>
+<li>Then during subcategory extraction - we compare subcategory_names for</li>
+</ul></li>
+</ul>
+<p>
+Well, this might not be the silver bullet to our problem, but we can grab data and do the analysis regarding the subcategories that we have in db.<br />
+How? - instead of splitting up a title and comparing the combinations we'll have the exact value for the artist, which will avoid cases such as:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">143</td>
+<td class="org-left">Oklahoma City Philharmonic: Gritty, Sweet And &#x2026;</td>
+<td class="org-left">Oklahoma</td>
+<td class="org-left">Oklahoma!</td>
+<td class="org-right">0.888889</td>
+<td class="org-right">0.977778</td>
+</tr>
+</tbody>
+</table>
+<p>
+<b><b>Oklahoma City Philarmonic</b></b> won't be mistaken for <b><b>Oklahoma!</b></b>.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgcffe966" class="outline-3">
+<h3 id="orgcffe966"><span class="section-number-3">7.3</span> Left to be discussed</h3>
+<div class="outline-text-3" id="text-7-3">
+</div>
+<div id="outline-container-orgcd7e421" class="outline-4">
+<h4 id="orgcd7e421"><span class="section-number-4">7.3.1</span> Better logic for Event scoring (rule based)</h4>
+</div>
+<div id="outline-container-orgc1ccd1a" class="outline-4">
+<h4 id="orgc1ccd1a"><span class="section-number-4">7.3.2</span> Better logic for ticket scoring (rule based)</h4>
+</div>
+<div id="outline-container-org3c6dcc9" class="outline-4">
+<h4 id="org3c6dcc9"><span class="section-number-4">7.3.3</span> AB test platform</h4>
+</div>
+<div id="outline-container-org9c555e0" class="outline-4">
+<h4 id="org9c555e0"><span class="section-number-4">7.3.4</span> Event/Ticket scoring based on ML</h4>
+</div>
+<div id="outline-container-org18676f4" class="outline-4">
+<h4 id="org18676f4"><span class="section-number-4">7.3.5</span> Free user: narrow location by using IP to location</h4>
+</div>
+<div id="outline-container-org3a967a6" class="outline-4">
+<h4 id="org3a967a6"><span class="section-number-4">7.3.6</span> Premium users: calculation distance to location from city center? (ip to location)</h4>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-04-29 ოთხ 15:47</p>
+<p class="date">Created: 2020-05-04 Mon 15:09</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
