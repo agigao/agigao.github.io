@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-10 Wed 14:02 -->
+<!-- 2020-06-15 ორშ 15:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>YEY Data Engineering</title>
@@ -193,60 +194,38 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>
+<script type="text/javascript" src="styles/lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
 <style> #content{max-width:1800px;}</style>
 <style> p{max-width:800px;}</style>
 <style> li{max-width:800px;}</style
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -278,80 +257,80 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc355e8f">1. March-April</a>
+<li><a href="#org5bdc9b8">1. March-April</a>
 <ul>
-<li><a href="#org3c25291">1.1. <span class="done DONE">DONE</span> Deduplication</a>
+<li><a href="#org5232628">1.1. <span class="done DONE">DONE</span> Deduplication</a>
 <ul>
-<li><a href="#orgfa37397">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
-<li><a href="#org97ec810">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
-<li><a href="#orgba0ca66">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
+<li><a href="#org2a78422">1.1.1. <span class="done DONE">DONE</span> Deduplication Module</a></li>
+<li><a href="#org719ad1b">1.1.2. <span class="done DONE">DONE</span> Recommender Integration</a></li>
+<li><a href="#org3eb8c6f">1.1.3. <span class="done DONE">DONE</span> Deploying to production</a></li>
 </ul>
 </li>
-<li><a href="#orgc605adb">1.2. <span class="done DONE">DONE</span> My Travel Plans</a>
+<li><a href="#org6e9ffe8">1.2. <span class="done DONE">DONE</span> My Travel Plans</a>
 <ul>
-<li><a href="#org460fbcb">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
-<li><a href="#org6ee3114">1.2.2. <span class="done DONE">DONE</span> implementation</a></li>
-<li><a href="#org10dd065">1.2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
+<li><a href="#orgde17483">1.2.1. <span class="done DONE">DONE</span> exploration of code/ideas</a></li>
+<li><a href="#org2d6baa7">1.2.2. <span class="done DONE">DONE</span> implementation</a></li>
+<li><a href="#orgd43ee20">1.2.3. <span class="done DONE">DONE</span> Result\Testing</a></li>
 </ul>
 </li>
-<li><a href="#org42ee7f1">1.3. <span class="done DONE">DONE</span> Limitations</a>
+<li><a href="#orgb9cddc6">1.3. <span class="done DONE">DONE</span> Limitations</a>
 <ul>
-<li><a href="#org0a9938c">1.3.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#orgc7f9309">1.3.2. [X] Proposed solution</a></li>
-<li><a href="#org94188d4">1.3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
+<li><a href="#orgab2bad2">1.3.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#orgd66c21f">1.3.2. <span class="done _X_">[X]</span> Proposed solution</a></li>
+<li><a href="#org5408d6d">1.3.3. <span class="done DONE">DONE</span> Implementation/Testing</a></li>
 </ul>
 </li>
-<li><a href="#orga0f3395">1.4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
+<li><a href="#org851d2e5">1.4. <span class="done DONE">DONE</span> Subcategory Extraction</a>
 <ul>
-<li><a href="#org618ff86">1.4.1. <span class="done DONE">DONE</span> Analysis</a></li>
-<li><a href="#org22c2244">1.4.2. <span class="done DONE">DONE</span> Implementation / Testing</a></li>
-<li><a href="#orgd03404e">1.4.3. <span class="done DONE">DONE</span> Integration</a></li>
-<li><a href="#orga2dcae3">1.4.4. <span class="done DONE">DONE</span> Further Analysis and Report</a></li>
+<li><a href="#orga034483">1.4.1. <span class="done DONE">DONE</span> Analysis</a></li>
+<li><a href="#org86428ac">1.4.2. <span class="done DONE">DONE</span> Implementation / Testing</a></li>
+<li><a href="#org7bcad4d">1.4.3. <span class="done DONE">DONE</span> Integration</a></li>
+<li><a href="#orgc039a49">1.4.4. <span class="done DONE">DONE</span> Further Analysis and Report</a></li>
 </ul>
 </li>
-<li><a href="#org00fdbc4">1.5. QA</a>
+<li><a href="#org10c73de">1.5. QA</a>
 <ul>
-<li><a href="#org990e25a">1.5.1. <span class="done DONE">DONE</span> More events than tickets</a></li>
-<li><a href="#org2285460">1.5.2. <span class="done DONE">DONE</span> The Structural Exploration</a></li>
-<li><a href="#org37c3ab4">1.5.3. <span class="done DONE">DONE</span> Data</a></li>
-<li><a href="#org56d2745">1.5.4. <span class="done DONE">DONE</span> Go through the process</a></li>
+<li><a href="#orge67df93">1.5.1. <span class="done DONE">DONE</span> More events than tickets</a></li>
+<li><a href="#orgc2d7a92">1.5.2. <span class="done DONE">DONE</span> The Structural Exploration</a></li>
+<li><a href="#org7378108">1.5.3. <span class="done DONE">DONE</span> Data</a></li>
+<li><a href="#org7630496">1.5.4. <span class="done DONE">DONE</span> Go through the process</a></li>
 </ul>
 </li>
-<li><a href="#org5ef36cf">1.6. Errands</a>
+<li><a href="#orge535e09">1.6. Errands</a>
 <ul>
-<li><a href="#org4799f4a">1.6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
-<li><a href="#orgfc56a3b">1.6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org0c1edf3">2. May</a>
-<ul>
-<li><a href="#orga1cd2e6">2.1. <span class="done DONE">DONE</span> QA</a></li>
-<li><a href="#org7246a0b">2.2. <span class="done DONE">DONE</span> Cheapest Ticket</a></li>
-<li><a href="#org1cb5c67">2.3. <span class="done DONE">DONE</span> YEY Structural Report</a></li>
-<li><a href="#org19f1670">2.4. <span class="done DONE">DONE</span> Price Drop Detector</a></li>
-<li><a href="#org95fedcb">2.5. <span class="done DONE">DONE</span> Location Based Recommendations</a>
-<ul>
-<li><a href="#orgcbb23fd">2.5.1. <span class="done DONE">DONE</span> Unit Testing</a></li>
-</ul>
-</li>
-<li><a href="#org94d4f60">2.6. <span class="done DONE">DONE</span> Restructure the project</a>
-<ul>
-<li><a href="#org989e847">2.6.1. New Structure</a></li>
+<li><a href="#orgd1e257f">1.6.1. <span class="todo TODO">TODO</span> XLS file to Database</a></li>
+<li><a href="#org81d6761">1.6.2. <span class="done DONE">DONE</span> cleanup branches</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org22e35b0">3. June</a>
+<li><a href="#orga68ca69">2. May</a>
 <ul>
-<li><a href="#org57fa954">3.1. <span class="done DONE">DONE</span> System Testing: the beginning</a></li>
-<li><a href="#org5937efc">3.2. <span class="done DONE">DONE</span> Dev / Prod envs</a>
+<li><a href="#org88ea3bd">2.1. <span class="done DONE">DONE</span> QA</a></li>
+<li><a href="#org18288af">2.2. <span class="done DONE">DONE</span> Cheapest Ticket</a></li>
+<li><a href="#orgdc8f078">2.3. <span class="done DONE">DONE</span> YEY Structural Report</a></li>
+<li><a href="#orgc1d835b">2.4. <span class="done DONE">DONE</span> Price Drop Detector</a></li>
+<li><a href="#orgfc1b131">2.5. <span class="done DONE">DONE</span> Location Based Recommendations</a>
 <ul>
-<li><a href="#org3732ce8">3.2.1. New Structure v2</a></li>
+<li><a href="#orgdfa169c">2.5.1. <span class="done DONE">DONE</span> Unit Testing</a></li>
 </ul>
 </li>
-<li><a href="#orgb1f7b81">3.3. <span class="todo TODO">TODO</span> Small tasks</a></li>
+<li><a href="#orge8769b9">2.6. <span class="done DONE">DONE</span> Restructure the project</a>
+<ul>
+<li><a href="#orga2bf7c6">2.6.1. New Structure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf3dbe2e">3. June</a>
+<ul>
+<li><a href="#org7857f89">3.1. <span class="done DONE">DONE</span> System Testing: the beginning</a></li>
+<li><a href="#orgc466494">3.2. <span class="done DONE">DONE</span> Dev / Prod envs</a></li>
+<li><a href="#orgf8d2e9e">3.3. <span class="todo TODO">TODO</span> Small tasks</a>
+<ul>
+<li><a href="#orgd98869e">3.3.1. New Structure v2</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -359,16 +338,16 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgc355e8f" class="outline-2">
-<h2 id="orgc355e8f"><span class="section-number-2">1</span> March-April</h2>
+<div id="outline-container-org5bdc9b8" class="outline-2">
+<h2 id="org5bdc9b8"><span class="section-number-2">1</span> March-April</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org3c25291" class="outline-3">
-<h3 id="org3c25291"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
+<div id="outline-container-org5232628" class="outline-3">
+<h3 id="org5232628"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Deduplication</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orgfa37397" class="outline-4">
-<h4 id="orgfa37397"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
+<div id="outline-container-org2a78422" class="outline-4">
+<h4 id="org2a78422"><span class="section-number-4">1.1.1</span> <span class="done DONE">DONE</span> Deduplication Module</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 A general idea is to avoid sending duplicate events to user.<br />
@@ -377,7 +356,7 @@ if data in all these these match then the event is duplicate.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="org04ee99d"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
+<li><a id="orgcc26a8d"></a><span class="done DONE">DONE</span> Preliminary Exploration/Refresh<br />
 <div class="outline-text-5" id="text-1-1-1-1">
 <ul class="org-ul">
 <li>Created 2 new tables and the original one was renamed.<br />
@@ -386,7 +365,7 @@ Idea in general: split yey_event into to tables -&gt; yey_event_clean, yey_event
 <ul class="org-ul">
 <li>yey_event_clean
 <ul class="org-ul">
-<li>original events with unique id's and duplicate links to lookup table.<br /></li>
+<li>original events with unique id&rsquo;s and duplicate links to lookup table.<br /></li>
 <li>duplicate - 1/0</li>
 </ul></li>
 <li>yey_event_lookup
@@ -530,7 +509,7 @@ yey_event_lookup
 </div>
 </li>
 
-<li><a id="orgc2c9629"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
+<li><a id="orgc8bc51a"></a><span class="done DONE">DONE</span> Analyse PokerNews/Airbnb<br />
 <div class="outline-text-5" id="text-1-1-1-2">
 <p>
 Caveats:
@@ -542,31 +521,31 @@ Caveats:
 </ul></li>
 <li>Airbnb:
 <ol class="org-ol">
-<li>We don't have duplicates, for now.</li>
-<li>Current solution won't work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
+<li>We don&rsquo;t have duplicates, for now.</li>
+<li>Current solution won&rsquo;t work for duplication as we have a very general data for Airbnb records: in venue [city, state], city [city], also event_time is null.</li>
 </ol></li>
 </ul>
 </div>
 </li>
 
-<li><a id="org7c83ada"></a><span class="done DONE">DONE</span> Testing<br />
+<li><a id="orgf01c125"></a><span class="done DONE">DONE</span> Testing<br />
 <div class="outline-text-5" id="text-1-1-1-3">
 <ul class="org-ul">
 <li>Details:
-Some extensive refactoring and testing has been done. I'm satisfied with the current result.<br />
+Some extensive refactoring and testing has been done. I&rsquo;m satisfied with the current result.<br />
 <ul class="org-ul">
 <li><p>
 SQL for extra tests:
 </p>
 <div class="org-src-container">
-<pre class="src src-sql">SELECT city,
-       venue,
-       event_time,
-       event_source_id,
-       COUNT(*)
-FROM yey_event_clean
-GROUP BY city, venue, event_time, event_source_id
-HAVING COUNT(*) &gt; 1;
+<pre class="src src-sql">         <span style="color: #859900; font-weight: bold;">SELECT</span> city,
+                venue,
+                event_time,
+                event_source_id,
+                <span style="color: #268bd2;">COUNT</span>(*)
+         <span style="color: #859900; font-weight: bold;">FROM</span> yey_event_clean
+         <span style="color: #859900; font-weight: bold;">GROUP</span> <span style="color: #859900; font-weight: bold;">BY</span> city, venue, event_time, event_source_id
+         <span style="color: #859900; font-weight: bold;">HAVING</span> <span style="color: #268bd2;">COUNT</span>(*) &gt; <span style="color: #d33682; font-weight: bold;">1</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -633,12 +612,12 @@ Result
 </ul></li>
 
 <li><p>
-So, yey_event_clean table must be a major table that will provide users with events, it's clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
+So, yey_event_clean table must be a major table that will provide users with events, it&rsquo;s clean = free from duplicates. We have false positives for duplicate check due to null value in event_time column for Airbnb records.
 </p>
 <div class="org-src-container">
-<pre class="src src-sql">SELECT *
-FROM yey_event_clean
-WHERE event_time IS NULL;
+<pre class="src src-sql">         <span style="color: #859900; font-weight: bold;">SELECT</span> *
+         <span style="color: #859900; font-weight: bold;">FROM</span> yey_event_clean
+         <span style="color: #859900; font-weight: bold;">WHERE</span> event_time <span style="color: #859900; font-weight: bold;">IS</span> <span style="color: #859900; font-weight: bold;">NULL</span>;
 </pre>
 </div>
 <ul class="org-ul">
@@ -651,12 +630,12 @@ WHERE event_time IS NULL;
 </ol>
 </div>
 
-<div id="outline-container-org97ec810" class="outline-4">
-<h4 id="org97ec810"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
+<div id="outline-container-org719ad1b" class="outline-4">
+<h4 id="org719ad1b"><span class="section-number-4">1.1.2</span> <span class="done DONE">DONE</span> Recommender Integration</h4>
 <div class="outline-text-4" id="text-1-1-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgd1f95b0"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
+<li><a id="orgd167fe5"></a><span class="done DONE">DONE</span> Implementation/Testing<br />
 <div class="outline-text-5" id="text-1-1-2-1">
 <ul class="org-ul">
 <li>Findings
@@ -666,48 +645,48 @@ Out of 2040 events only 640 events have corresponding tickets.</li>
 <li>querying events through yey_event_clean</li>
 <li>joining yey_ticket event_id on yey_event_lookup id upon querying tickets!</li>
 </ul></li>
-<li>outliers: somehow some events tend to differ in terms of date by 1 day, they're obviously duplicates.</li>
+<li>outliers: somehow some events tend to differ in terms of date by 1 day, they&rsquo;re obviously duplicates.</li>
 </ul>
 </div>
 </li>
 </ol>
 </div>
 
-<div id="outline-container-orgba0ca66" class="outline-4">
-<h4 id="orgba0ca66"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
+<div id="outline-container-org3eb8c6f" class="outline-4">
+<h4 id="org3eb8c6f"><span class="section-number-4">1.1.3</span> <span class="done DONE">DONE</span> Deploying to production</h4>
 <div class="outline-text-4" id="text-1-1-3">
 </div>
 <ol class="org-ol">
-<li><a id="org0ff72a1"></a><span class="done DONE">DONE</span> Creating new tables<br />
+<li><a id="org4c2345f"></a><span class="done DONE">DONE</span> Creating new tables<br />
 <div class="outline-text-5" id="text-1-1-3-1">
 <p>
 yey_event_clean, yey_event_lookup
 </p>
 </div>
 </li>
-<li><a id="org61e2f28"></a><span class="done DONE">DONE</span> Integrating into the process<br />
+<li><a id="orga1339f0"></a><span class="done DONE">DONE</span> Integrating into the process<br />
 <div class="outline-text-5" id="text-1-1-3-2">
 <ul class="org-ul">
 <li>unifying under a single script.</li>
 </ul>
 </div>
 </li>
-<li><a id="org562ad42"></a><span class="done DONE">DONE</span> Testing<br /></li>
+<li><a id="orgefc90ad"></a><span class="done DONE">DONE</span> Testing<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc605adb" class="outline-3">
-<h3 id="orgc605adb"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> My Travel Plans</h3>
+<div id="outline-container-org6e9ffe8" class="outline-3">
+<h3 id="org6e9ffe8"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> My Travel Plans</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Decision - in case of travel destinations send 6 events from tr/destinations.
 </p>
 </div>
-<div id="outline-container-org460fbcb" class="outline-4">
-<h4 id="org460fbcb"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
+<div id="outline-container-orgde17483" class="outline-4">
+<h4 id="orgde17483"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> exploration of code/ideas</h4>
 </div>
-<div id="outline-container-org6ee3114" class="outline-4">
-<h4 id="org6ee3114"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> implementation</h4>
+<div id="outline-container-org2d6baa7" class="outline-4">
+<h4 id="org2d6baa7"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> implementation</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
 <li>6 from preferred location / 6 from travel plans</li>
@@ -767,7 +746,7 @@ But it will become something like:
 </table>
 <p>
 etc.
-which isn't a good solution.
+which isn&rsquo;t a good solution.
 </p></li>
 
 <li><p>
@@ -841,8 +820,8 @@ events</li>
 </div>
 </div>
 
-<div id="outline-container-org10dd065" class="outline-4">
-<h4 id="org10dd065"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> Result\Testing</h4>
+<div id="outline-container-orgd43ee20" class="outline-4">
+<h4 id="orgd43ee20"><span class="section-number-4">1.2.3</span> <span class="done DONE">DONE</span> Result\Testing</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>So, the process is implemented and works fine, just distribution of events has to be re-adjusted.</li>
@@ -931,19 +910,19 @@ yey_useremailqueue_tickets:
 Yes, right now I realized we need them sorted by user_id, travel [True comes first]
 </p></li>
 <li>Limit event to X, <br />
-So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user's inbox.</li>
+So, in config file we have two constants STANDARD_EVENTS_LIMIT_PER_USER and TRAVEL_EVENTS_LIMIT_PER_USER, value of both is 6 right now, as suggested. Adjusting this constant will change a number of events/tickets for each type(standard/travel) that end up in a user&rsquo;s inbox.</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org42ee7f1" class="outline-3">
-<h3 id="org42ee7f1"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Limitations</h3>
+<div id="outline-container-orgb9cddc6" class="outline-3">
+<h3 id="orgb9cddc6"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Limitations</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
 
-<div id="outline-container-org0a9938c" class="outline-4">
-<h4 id="org0a9938c"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Analysis</h4>
+<div id="outline-container-orgab2bad2" class="outline-4">
+<h4 id="orgab2bad2"><span class="section-number-4">1.3.1</span> <span class="done DONE">DONE</span> Analysis</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <ul class="org-ul">
 <li>How many offers a user gets on average for the same event?</li>
@@ -1029,8 +1008,8 @@ emails.</li>
 </div>
 </div>
 
-<div id="outline-container-orgc7f9309" class="outline-4">
-<h4 id="orgc7f9309"><span class="section-number-4">1.3.2</span> [X] Proposed solution</h4>
+<div id="outline-container-orgd66c21f" class="outline-4">
+<h4 id="orgd66c21f"><span class="section-number-4">1.3.2</span> <span class="done _X_">[X]</span> Proposed solution</h4>
 <div class="outline-text-4" id="text-1-3-2">
 <ul class="org-ul">
 <li>How to limit the same event offer for the user? <br />
@@ -1086,8 +1065,8 @@ recommendation process according this table.</li>
 </div>
 </div>
 
-<div id="outline-container-org94188d4" class="outline-4">
-<h4 id="org94188d4"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
+<div id="outline-container-org5408d6d" class="outline-4">
+<h4 id="org5408d6d"><span class="section-number-4">1.3.3</span> <span class="done DONE">DONE</span> Implementation/Testing</h4>
 <div class="outline-text-4" id="text-1-3-3">
 <p>
 So, the following solution was implemented - instead of creating a new table, a
@@ -1150,12 +1129,12 @@ each new small feature.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orga0f3395" class="outline-3">
-<h3 id="orga0f3395"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h3>
+<div id="outline-container-org851d2e5" class="outline-3">
+<h3 id="org851d2e5"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Subcategory Extraction</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org618ff86" class="outline-4">
-<h4 id="org618ff86"><span class="section-number-4">1.4.1</span> <span class="done DONE">DONE</span> Analysis</h4>
+<div id="outline-container-orga034483" class="outline-4">
+<h4 id="orga034483"><span class="section-number-4">1.4.1</span> <span class="done DONE">DONE</span> Analysis</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <ul class="org-ul">
 <li><p>
@@ -1203,22 +1182,22 @@ yey_event title -&gt; subcategory_id
 Exploration
 </p>
 <div class="org-src-container">
-<pre class="src src-sql">SELECT data.*, cat.name as event_category_name
-         FROM (SELECT --yec.link,
-                      events.title          as events_title,
-                      subcat.id             as subcat_id,
-                      subcat.name           as category_name,
-                      -- events.subcategory_id as events_subcategory_id,
-                      events.category_id    as event_category_id,
-                      cat.id                as cat_id,
-                      cat.name              as cat_name
-               FROM yey_event_clean as events
-                        JOIN yey_subcategory as subcat
-                             on events.title LIKE '%' || subcat.name || '%'
-                        JOIN yey_category cat on subcat.category_id = cat.id
-                  WHERE events.category_id &lt;&gt; subcat.category_id -- comment out for complete list
-              ) as data
-                  JOIN yey_category cat on data.event_category_id = cat.id
+<pre class="src src-sql">    <span style="color: #859900; font-weight: bold;">SELECT</span> <span style="color: #859900; font-weight: bold;">data</span>.*, cat.<span style="color: #859900; font-weight: bold;">name</span> <span style="color: #859900; font-weight: bold;">as</span> event_category_name
+             <span style="color: #859900; font-weight: bold;">FROM</span> (<span style="color: #859900; font-weight: bold;">SELECT</span> <span style="color: #405A61;">--yec.link,</span>
+                          events.title          <span style="color: #859900; font-weight: bold;">as</span> events_title,
+                          subcat.id             <span style="color: #859900; font-weight: bold;">as</span> subcat_id,
+                          subcat.<span style="color: #859900; font-weight: bold;">name</span>           <span style="color: #859900; font-weight: bold;">as</span> category_name,
+                          <span style="color: #405A61;">-- events.subcategory_id as events_subcategory_id,</span>
+                          events.category_id    <span style="color: #859900; font-weight: bold;">as</span> event_category_id,
+                          cat.id                <span style="color: #859900; font-weight: bold;">as</span> cat_id,
+                          cat.<span style="color: #859900; font-weight: bold;">name</span>              <span style="color: #859900; font-weight: bold;">as</span> cat_name
+                   <span style="color: #859900; font-weight: bold;">FROM</span> yey_event_clean <span style="color: #859900; font-weight: bold;">as</span> events
+                            <span style="color: #859900; font-weight: bold;">JOIN</span> yey_subcategory <span style="color: #859900; font-weight: bold;">as</span> subcat
+                                 <span style="color: #859900; font-weight: bold;">on</span> events.title <span style="color: #859900; font-weight: bold;">LIKE</span> <span style="color: #2aa198;">'%'</span> || subcat.<span style="color: #859900; font-weight: bold;">name</span> || <span style="color: #2aa198;">'%'</span>
+                            <span style="color: #859900; font-weight: bold;">JOIN</span> yey_category cat <span style="color: #859900; font-weight: bold;">on</span> subcat.category_id = cat.id
+                      <span style="color: #859900; font-weight: bold;">WHERE</span> events.category_id &lt;&gt; subcat.category_id <span style="color: #405A61;">-- comment </span><span style="color: #859900; font-weight: bold;">o</span><span style="color: #405A61;">ut for complete list</span>
+                  ) <span style="color: #859900; font-weight: bold;">as</span> <span style="color: #859900; font-weight: bold;">data</span>
+                      <span style="color: #859900; font-weight: bold;">JOIN</span> yey_category cat <span style="color: #859900; font-weight: bold;">on</span> <span style="color: #859900; font-weight: bold;">data</span>.event_category_id = cat.id
 </pre>
 </div></li>
 <li>Result</li>
@@ -1332,7 +1311,7 @@ Theater - <a href="https://www.stubhub.com/houston-symphony-tickets/performer/16
 
 <li>Levenstein and his peers
 They solve another kind of problem - how many changes one needs for string a
-to make it identical to b. We're not looking for string equality, as title
+to make it identical to b. We&rsquo;re not looking for string equality, as title
 will always be larger than subcategory name.
 <ul class="org-ul">
 <li>Our problem is solved by the following approach: find <b><b>longest common substring similarity</b></b>, what % of
@@ -1345,13 +1324,13 @@ Floyd in the title.</li>
 </div>
 </div>
 
-<div id="outline-container-org22c2244" class="outline-4">
-<h4 id="org22c2244"><span class="section-number-4">1.4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h4>
+<div id="outline-container-org86428ac" class="outline-4">
+<h4 id="org86428ac"><span class="section-number-4">1.4.2</span> <span class="done DONE">DONE</span> Implementation / Testing</h4>
 <div class="outline-text-4" id="text-1-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="org67e5d34"></a><span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.<br /></li>
-<li><a id="org901d76d"></a><span class="done DONE">DONE</span> Subcategory extraction:<br />
+<li><a id="orga11a696"></a><span class="done DONE">DONE</span> Convert deduplication to indicate more generalized purpose -&gt; [data] cleaning.<br /></li>
+<li><a id="org74538d9"></a><span class="done DONE">DONE</span> Subcategory extraction:<br />
 <div class="outline-text-5" id="text-1-4-2-2">
 <ul class="org-ul">
 <li>Test Algorithms and find the most accurate approach.</li>
@@ -1365,7 +1344,7 @@ Floyd in the title.</li>
 
 <li>What happens if for example we have Alabama Crimson Tide in basketball and football.
 <ul class="org-ul">
-<li>Umm, we compare both, categories as well, so, it'll filter them out.</li>
+<li>Umm, we compare both, categories as well, so, it&rsquo;ll filter them out.</li>
 </ul></li>
 
 <li>Check all mismatches in event_caregory id and category id
@@ -1375,7 +1354,7 @@ Floyd in the title.</li>
 
 <li>What happens if we have overlay of events/categories?
 <ul class="org-ul">
-<li>We won't, anymore.</li>
+<li>We won&rsquo;t, anymore.</li>
 </ul></li>
 
 <li>General idea:
@@ -1589,7 +1568,7 @@ Categories:
 </div>
 </li>
 
-<li><a id="org7b54a3f"></a>Current state 21/04<br />
+<li><a id="orgdba3e45"></a>Current state 21/04<br />
 <div class="outline-text-5" id="text-1-4-2-3">
 <p>
 majority of the job is complete, also exact matches have been dealt with. We no
@@ -1898,27 +1877,27 @@ Theater.
 <li>Example (a sneak peek):</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-python">for t in combinations(title, len(name.split())):
-    sim = td.jaro_winkler.normalized_similarity(t, name)
-    if sim &gt; 0.0:
-        print(f'Similarity: {sim}, {t} - {name}')
+<pre class="src src-python"><span style="color: #859900; font-weight: bold;">for</span> t <span style="color: #859900; font-weight: bold;">in</span> combinations(title, <span style="color: #268bd2;">len</span>(name.split())):
+    <span style="color: #6c71c4;">sim</span> = td.jaro_winkler.normalized_similarity(t, name)
+    <span style="color: #859900; font-weight: bold;">if</span> sim &gt; <span style="color: #d33682; font-weight: bold;">0.0</span>:
+        <span style="color: #859900; font-weight: bold;">print</span>(f<span style="color: #2aa198;">'Similarity: {sim}, {t} - {name}'</span>)
 
-"""
-Similarity: 1.0, Alabama Crimson Tide - Alabama Crimson Tide
-Similarity: 0.6025030525030525, Crimson Tide Football - Alabama Crimson Tide
-Similarity: 0.44439775910364143, Tide Football vs. - Alabama Crimson Tide
-Similarity: 0.5666666666666667, Football vs. Georgia - Alabama Crimson Tide
-Similarity: 0.4750000000000001, vs. Georgia Bulldogs - Alabama Crimson Tide
-Similarity: 0.45518518518518514, Georgia Bulldogs Football - Alabama Crimson Tide
-Similarity: 0.3813725490196078, Bulldogs Football - Alabama Crimson Tide
-Similarity: 0.39722222222222214, Football - Alabama Crimson Tide
-"""
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">Similarity: 1.0, Alabama Crimson Tide - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.6025030525030525, Crimson Tide Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.44439775910364143, Tide Football vs. - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.5666666666666667, Football vs. Georgia - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.4750000000000001, vs. Georgia Bulldogs - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.45518518518518514, Georgia Bulldogs Football - Alabama Crimson Tid</span><span style="color: #859900; font-weight: bold;">e</span>
+<span style="color: #2aa198;">Similarity: 0.3813725490196078, Bulldogs Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">Similarity: 0.39722222222222214, Football - Alabama Crimson Tide</span>
+<span style="color: #2aa198;">"""</span>
 </pre>
 </div>
 </div>
 </li>
 
-<li><a id="org2497477"></a>Notes 22/04<br />
+<li><a id="orgee1dccd"></a>Notes 22/04<br />
 <div class="outline-text-5" id="text-1-4-2-4">
 <ul class="org-ul">
 <li>Observation: yey_event_clean got 7873 unique strings in title column out of
@@ -1968,7 +1947,7 @@ Latin added to Theater category in the process of checking categories:
 
 
 <ol class="org-ol">
-<li><a id="orgf143313"></a>Analysis/tweaks<br />
+<li><a id="org35cbee8"></a>Analysis/tweaks<br />
 <div class="outline-text-6" id="text-1-4-2-4-1">
 <ol class="org-ol">
 <li><p>
@@ -1996,40 +1975,40 @@ almost 7 fold.
 I think similarity check [technically] works quite quite well,
 eventually I settled down on Levenstein algorithm after couple of
 tricks in the process. Instead of checking name directly in the title,
-I'm creating n combinations out of title and then checking using
+I&rsquo;m creating n combinations out of title and then checking using
 the algorithm, which basically measures a number of changes that are
 required to make 2 strings equal.
 </p>
 <div class="org-src-container">
-<pre class="src src-python">title = 'Sacramento River Cats at Las Vegas Aviators'
-name = 'Sacremento River Cats'
+<pre class="src src-python"><span style="color: #6c71c4;">title</span> = <span style="color: #2aa198;">'Sacramento River Cats at Las Vegas Aviators'</span>
+<span style="color: #6c71c4;">name</span> = <span style="color: #2aa198;">'Sacremento River Cats'</span>
 
-combs = combinations(title, name);
+<span style="color: #6c71c4;">combs</span> = combinations(title, name);
 combs
-# Here we got combinations out of title
-# number of element in the combinations == number of elements in the name.
-"""
-['Sacramento River Cats',
-'River Cats at',
-'Cats at Las',
-'at Las Vegas',
-'Las Vegas Aviators',
-'Vegas Aviators',
-'Aviators']
-"""
-for c in combs:
-    sim = td.levenshtein.normalized_similarity(c, name)
-    print(f'Similarity: {sim}, {c} - {name}')
+<span style="color: #405A61;"># </span><span style="color: #405A61;">Here we got combinations out of title</span>
+<span style="color: #405A61;"># </span><span style="color: #405A61;">number of element in the combinations == number of elements in the name.</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">['Sacramento River Cats',</span>
+<span style="color: #2aa198;">'River Cats at',</span>
+<span style="color: #2aa198;">'Cats at Las',</span>
+<span style="color: #2aa198;">'at Las Vegas',</span>
+<span style="color: #2aa198;">'Las Vegas Aviators',</span>
+<span style="color: #2aa198;">'Vegas Aviators',</span>
+<span style="color: #2aa198;">'Aviators']</span>
+<span style="color: #2aa198;">"""</span>
+<span style="color: #859900; font-weight: bold;">for</span> c <span style="color: #859900; font-weight: bold;">in</span> combs:
+    <span style="color: #6c71c4;">sim</span> = td.levenshtein.normalized_similarity(c, name)
+    <span style="color: #859900; font-weight: bold;">print</span>(f<span style="color: #2aa198;">'Similarity: {sim}, {c} - {name}'</span>)
 
-"""
-Similarity: 0.9523809523809523, Sacramento River Cats - Sacremento River Cats
-Similarity: 0.33333333333333337, River Cats at - Sacremento River Cats
-Similarity: 0.2857142857142857, Cats at Las - Sacremento River Cats
-Similarity: 0.23809523809523814, at Las Vegas - Sacremento River Cats
-Similarity: 0.23809523809523814, Las Vegas Aviators - Sacremento River Cats
-Similarity: 0.19047619047619047, Vegas Aviators - Sacremento River Cats
-Similarity: 0.19047619047619047, Aviators - Sacremento River Cats
-"""
+<span style="color: #2aa198;">"""</span>
+<span style="color: #2aa198;">Similarity: 0.9523809523809523, Sacramento River Cats - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.33333333333333337, River Cats at - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.2857142857142857, Cats at Las - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.23809523809523814, at Las Vegas - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.23809523809523814, Las Vegas Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.19047619047619047, Vegas Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">Similarity: 0.19047619047619047, Aviators - Sacremento River Cats</span>
+<span style="color: #2aa198;">"""</span>
 </pre>
 </div></li>
 </ul></li>
@@ -2063,7 +2042,7 @@ required:
 </tr>
 
 <tr>
-<td class="org-left">Ain't Too Proud</td>
+<td class="org-left">Ain&rsquo;t Too Proud</td>
 <td class="org-left">Aint Too Proud Baltimore</td>
 <td class="org-right">0.9333333333333333</td>
 </tr>
@@ -2087,7 +2066,7 @@ required:
 </tr>
 
 <tr>
-<td class="org-left">The Band's Visit</td>
+<td class="org-left">The Band&rsquo;s Visit</td>
 <td class="org-left">The Bands Visit Richmond Tickets (Rescheduled from May 3, 2020)</td>
 <td class="org-right">0.9375</td>
 </tr>
@@ -2139,15 +2118,15 @@ these cases are outliers.</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd03404e" class="outline-4">
-<h4 id="orgd03404e"><span class="section-number-4">1.4.3</span> <span class="done DONE">DONE</span> Integration</h4>
+<div id="outline-container-org7bcad4d" class="outline-4">
+<h4 id="org7bcad4d"><span class="section-number-4">1.4.3</span> <span class="done DONE">DONE</span> Integration</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <p>
 Well, the source is ready, 23/04 integration into the system and final testing.
 </p>
 </div>
 <ol class="org-ol">
-<li><a id="orgec28b13"></a>Notes 23/04<br />
+<li><a id="org62f9232"></a>Notes 23/04<br />
 <div class="outline-text-5" id="text-1-4-3-1">
 <ul class="org-ul">
 <li>It turns out we have subcategory duplicates in <b><b>yey_subcategory</b></b>, for
@@ -2177,8 +2156,8 @@ algorithm. Commit is ready to be tested.</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-orga2dcae3" class="outline-4">
-<h4 id="orga2dcae3"><span class="section-number-4">1.4.4</span> <span class="done DONE">DONE</span> Further Analysis and Report</h4>
+<div id="outline-container-orgc039a49" class="outline-4">
+<h4 id="orgc039a49"><span class="section-number-4">1.4.4</span> <span class="done DONE">DONE</span> Further Analysis and Report</h4>
 <div class="outline-text-4" id="text-1-4-4">
 <p>
 Major lessons learned here:
@@ -2186,7 +2165,7 @@ Major lessons learned here:
 <ol class="org-ol">
 <li>We need to go through subcategories and check for typos and alike.</li>
 <li>We might have to take some hit and miss matches to avoid false positives as much as possible, for example in small words single character mismatch =&gt; similarity below 0.9, but that is supposed to be tackled by introduced jaro winkler algorithm into the system, on top of Levenshtein.</li>
-<li>Absolute majority of matches don't require algorithmic check as subcategory
+<li>Absolute majority of matches don&rsquo;t require algorithmic check as subcategory
 names are mostly substrings of titles - 92.4%, 232 out of 251 [unique subcategories].</li>
 <li>BUT 7.6% of similarities [19 in total] found by employing algorithms
 translates into 203 events, overall.</li>
@@ -2317,7 +2296,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">134</td>
 <td class="org-left">Aint Too Proud New York</td>
 <td class="org-left">Aint Too Proud</td>
-<td class="org-left">Ain't Too Proud</td>
+<td class="org-left">Ain&rsquo;t Too Proud</td>
 <td class="org-right">0.933333</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2362,7 +2341,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">152</td>
 <td class="org-left">The Bands Visit Durham</td>
 <td class="org-left">The Bands Visit</td>
-<td class="org-left">The Band's Visit</td>
+<td class="org-left">The Band&rsquo;s Visit</td>
 <td class="org-right">0.937500</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2371,7 +2350,7 @@ algorithm (Jaccard) threshold is 0.9.
 <td class="org-right">172</td>
 <td class="org-left">Chris DElia</td>
 <td class="org-left">Chris DElia</td>
-<td class="org-left">Chris D'Elia</td>
+<td class="org-left">Chris D&rsquo;Elia</td>
 <td class="org-right">0.916667</td>
 <td class="org-right">0.000000</td>
 </tr>
@@ -2438,82 +2417,82 @@ Summary
 </div>
 </div>
 
-<div id="outline-container-org00fdbc4" class="outline-3">
-<h3 id="org00fdbc4"><span class="section-number-3">1.5</span> QA</h3>
+<div id="outline-container-org10c73de" class="outline-3">
+<h3 id="org10c73de"><span class="section-number-3">1.5</span> QA</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-org990e25a" class="outline-4">
-<h4 id="org990e25a"><span class="section-number-4">1.5.1</span> <span class="done DONE">DONE</span> More events than tickets</h4>
+<div id="outline-container-orge67df93" class="outline-4">
+<h4 id="orge67df93"><span class="section-number-4">1.5.1</span> <span class="done DONE">DONE</span> More events than tickets</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <p>
-Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don't have
-corresponding tickets in the <b><b>yey_tickets</b></b> table. This issue doesn't seem to
+Okay, it turns out more than 50% of events (<b><b>yey_events</b></b>) don&rsquo;t have
+corresponding tickets in the <b><b>yey_tickets</b></b> table. This issue doesn&rsquo;t seem to
 affect <b><b>yey_events_clean</b></b> table though. But we might have to clean events
 according ticket availability upon query into the recommender system.
 </p>
 </div>
 </div>
-<div id="outline-container-org2285460" class="outline-4">
-<h4 id="org2285460"><span class="section-number-4">1.5.2</span> <span class="done DONE">DONE</span> The Structural Exploration</h4>
+<div id="outline-container-orgc2d7a92" class="outline-4">
+<h4 id="orgc2d7a92"><span class="section-number-4">1.5.2</span> <span class="done DONE">DONE</span> The Structural Exploration</h4>
 <div class="outline-text-4" id="text-1-5-2">
 </div>
 </div>
-<div id="outline-container-org37c3ab4" class="outline-4">
-<h4 id="org37c3ab4"><span class="section-number-4">1.5.3</span> <span class="done DONE">DONE</span> Data</h4>
+<div id="outline-container-org7378108" class="outline-4">
+<h4 id="org7378108"><span class="section-number-4">1.5.3</span> <span class="done DONE">DONE</span> Data</h4>
 <div class="outline-text-4" id="text-1-5-3">
 <p>
 Check if all column that are used in the process contain relevant data
 </p>
 </div>
 </div>
-<div id="outline-container-org56d2745" class="outline-4">
-<h4 id="org56d2745"><span class="section-number-4">1.5.4</span> <span class="done DONE">DONE</span> Go through the process</h4>
+<div id="outline-container-org7630496" class="outline-4">
+<h4 id="org7630496"><span class="section-number-4">1.5.4</span> <span class="done DONE">DONE</span> Go through the process</h4>
 <div class="outline-text-4" id="text-1-5-4">
 <p>
-Well, we can slowly move to Test Driven Development and introduce tests, but it'll take time.
+Well, we can slowly move to Test Driven Development and introduce tests, but it&rsquo;ll take time.
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org5ef36cf" class="outline-3">
-<h3 id="org5ef36cf"><span class="section-number-3">1.6</span> Errands</h3>
+<div id="outline-container-orge535e09" class="outline-3">
+<h3 id="orge535e09"><span class="section-number-3">1.6</span> Errands</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-org4799f4a" class="outline-4">
-<h4 id="org4799f4a"><span class="section-number-4">1.6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
+<div id="outline-container-orgd1e257f" class="outline-4">
+<h4 id="orgd1e257f"><span class="section-number-4">1.6.1</span> <span class="todo TODO">TODO</span> XLS file to Database</h4>
 </div>
-<div id="outline-container-orgfc56a3b" class="outline-4">
-<h4 id="orgfc56a3b"><span class="section-number-4">1.6.2</span> <span class="done DONE">DONE</span> cleanup branches</h4>
+<div id="outline-container-org81d6761" class="outline-4">
+<h4 id="org81d6761"><span class="section-number-4">1.6.2</span> <span class="done DONE">DONE</span> cleanup branches</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org0c1edf3" class="outline-2">
-<h2 id="org0c1edf3"><span class="section-number-2">2</span> May</h2>
+<div id="outline-container-orga68ca69" class="outline-2">
+<h2 id="orga68ca69"><span class="section-number-2">2</span> May</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga1cd2e6" class="outline-3">
-<h3 id="orga1cd2e6"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> QA</h3>
+<div id="outline-container-org88ea3bd" class="outline-3">
+<h3 id="org88ea3bd"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> QA</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Well, it's an ongoing process, we can slowly move to TDD.
+Well, it&rsquo;s an ongoing process, we can slowly move to TDD.
 </p>
 </div>
 </div>
-<div id="outline-container-org7246a0b" class="outline-3">
-<h3 id="org7246a0b"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> Cheapest Ticket</h3>
+<div id="outline-container-org18288af" class="outline-3">
+<h3 id="org18288af"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> Cheapest Ticket</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Well, this one was already implemented, I made a mistake in evaluating the code.
 </p>
 </div>
 </div>
-<div id="outline-container-org1cb5c67" class="outline-3">
-<h3 id="org1cb5c67"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> YEY Structural Report</h3>
+<div id="outline-container-orgdc8f078" class="outline-3">
+<h3 id="orgdc8f078"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> YEY Structural Report</h3>
 </div>
-<div id="outline-container-org19f1670" class="outline-3">
-<h3 id="org19f1670"><span class="section-number-3">2.4</span> <span class="done DONE">DONE</span> Price Drop Detector</h3>
+<div id="outline-container-orgc1d835b" class="outline-3">
+<h3 id="orgc1d835b"><span class="section-number-3">2.4</span> <span class="done DONE">DONE</span> Price Drop Detector</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Search through different sources, integrate yey_eventlookup table into the process.
@@ -2524,17 +2503,17 @@ Search through different sources, integrate yey_eventlookup table into the proce
 <ul class="org-ul">
 <li>Upon querying tickets, event_ids are replace by the <b><b>original id</b></b><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> from <b><b>yey_eventlookup</b></b></li>
 <li>In the process the cheapest ticket is being picked and the rest dropped per event.</li>
-<li>That's it.</li>
+<li>That&rsquo;s it.</li>
 </ul></li>
 <li>Questions:
 <ul class="org-ul">
-<li>We're checking for all tickets from now[or last run of PDD] to the max date of all tickets. I don't think need it, because we're looking for events 21 days in the future.</li>
+<li>We&rsquo;re checking for all tickets from now[or last run of PDD] to the max date of all tickets. I don&rsquo;t think need it, because we&rsquo;re looking for events 21 days in the future.</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org95fedcb" class="outline-3">
-<h3 id="org95fedcb"><span class="section-number-3">2.5</span> <span class="done DONE">DONE</span> Location Based Recommendations</h3>
+<div id="outline-container-orgfc1b131" class="outline-3">
+<h3 id="orgfc1b131"><span class="section-number-3">2.5</span> <span class="done DONE">DONE</span> Location Based Recommendations</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Integrate lat/long into cleaner: it was already done.</li>
@@ -2552,16 +2531,16 @@ P.S. We execute it after premium filtering, just in case.</li>
 <li>Additional Observations / Questions
 <ul class="org-ul">
 <li>Do we keep only events w/o location data?</li>
-<li>Test db: we don't have yey_eventclean/eventlookup in the test db, how do we solve this?</li>
+<li>Test db: we don&rsquo;t have yey_eventclean/eventlookup in the test db, how do we solve this?</li>
 <li>Only 2 users wit lat/lon data</li>
 <li>Score/distance: should we play with it?</li>
 <li>PockerNews: do we plan to include it?</li>
 </ul></li>
 
-<li>We have a case when a user doesn't have any events</li>
+<li>We have a case when a user doesn&rsquo;t have any events</li>
 <li>Score or distance? <br />
 We have incremental search for tickets, based on location: DISTANCE_STEPS: [15, 40, 60, 100, 130], and my question is what do you think should we give priority to score over the distance?<br />
-Also, I'm picking 12 events, closest to the user.</li>
+Also, I&rsquo;m picking 12 events, closest to the user.</li>
 </ul>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -2692,8 +2671,8 @@ Also, I'm picking 12 events, closest to the user.</li>
 </table>
 </div>
 
-<div id="outline-container-orgcbb23fd" class="outline-4">
-<h4 id="orgcbb23fd"><span class="section-number-4">2.5.1</span> <span class="done DONE">DONE</span> Unit Testing</h4>
+<div id="outline-container-orgdfa169c" class="outline-4">
+<h4 id="orgdfa169c"><span class="section-number-4">2.5.1</span> <span class="done DONE">DONE</span> Unit Testing</h4>
 <div class="outline-text-4" id="text-2-5-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Locations Based Recs / Recommender Utils</li>
@@ -2702,8 +2681,8 @@ Also, I'm picking 12 events, closest to the user.</li>
 </div>
 </div>
 
-<div id="outline-container-org94d4f60" class="outline-3">
-<h3 id="org94d4f60"><span class="section-number-3">2.6</span> <span class="done DONE">DONE</span> Restructure the project</h3>
+<div id="outline-container-orge8769b9" class="outline-3">
+<h3 id="orge8769b9"><span class="section-number-3">2.6</span> <span class="done DONE">DONE</span> Restructure the project</h3>
 <div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li>a common config in src/config dir</li>
@@ -2715,66 +2694,66 @@ Also, I'm picking 12 events, closest to the user.</li>
 </ul>
 </div>
 
-<div id="outline-container-org989e847" class="outline-4">
-<h4 id="org989e847"><span class="section-number-4">2.6.1</span> New Structure</h4>
+<div id="outline-container-orga2bf7c6" class="outline-4">
+<h4 id="orga2bf7c6"><span class="section-number-4">2.6.1</span> New Structure</h4>
 <div class="outline-text-4" id="text-2-6-1">
 <div class="org-src-container">
-<pre class="src src-sh">├── Dockerfile
-├── README.adoc
-├── artifacts
-│   └── credentials.tmpl
-├── data
-├── docker
-│   ├── entrypointAD.sh
-│   ├── entrypointClean.sh
-│   ├── entrypointDeRec.sh
-│   ├── entrypointPDD.sh
-│   └── entrypointRec.sh
-├── docs
-│   └── database_fields_premium.xlsx
-├── logs
-├── requirements.txt
-├── setup.py
-└── yey
-    ├── config
-    │   └── config.yml
-    ├── queries
-    │   ├── cln_queries.sql
-    │   ├── pdd_queries.sql
-    │   └── rec_queries.sql
-    ├── src
-    │   ├── cleaner
-    │   │   ├── __init__.py
-    │   │   └── cleaner.py
-    │   ├── priceDropDetector
-    │   │   ├── __init__.py
-    │   │   └── priceDropDetector.py
-    │   ├── recommender
-    │   │   ├── __init__.py
-    │   │   ├── anomalyDetector.py
-    │   │   └── recommender.py
-    │   └── utils
-    │       ├── __init__.py
-    │       ├── common.py
-    │       ├── dbutils.py
-    │       ├── logs.py
-    │       ├── priceDropDetectorUtils.py
-    │       ├── recomenderUtils.py
-    │       └── s3utils.py
-    └── tests
-        ├── __init__.py
-        ├── config
-        │   ├── config.yml
-        │   └── queries.sql
-        ├── test_data
-        │   ├── rec_utils_data.pkl
-        │   ├── rec_utils_data_result.pkl
-        │   ├── recommend_events_data.pkl
-        │   ├── recommend_events_data_result.pkl
-        │   └── recommender_data.pkl
-        ├── test_recommenderUtils.py
-        ├── test_system.py
-        └── tests_utils.py
+<pre class="src src-sh">&#9500;&#9472;&#9472; Dockerfile
+&#9500;&#9472;&#9472; README.adoc
+&#9500;&#9472;&#9472; artifacts
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; credentials.tmpl
+&#9500;&#9472;&#9472; data
+&#9500;&#9472;&#9472; docker
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointAD.sh
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointClean.sh
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointDeRec.sh
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointPDD.sh
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; entrypointRec.sh
+&#9500;&#9472;&#9472; docs
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; database_fields_premium.xlsx
+&#9500;&#9472;&#9472; logs
+&#9500;&#9472;&#9472; requirements.txt
+&#9500;&#9472;&#9472; setup.py
+&#9492;&#9472;&#9472; yey
+    &#9500;&#9472;&#9472; config
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; config.yml
+    &#9500;&#9472;&#9472; queries
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; cln_queries.sql
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; pdd_queries.sql
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; rec_queries.sql
+    &#9500;&#9472;&#9472; src
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; cleaner
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; __init__.py
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; cleaner.py
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; priceDropDetector
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; __init__.py
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; priceDropDetector.py
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; recommender
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; __init__.py
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; anomalyDetector.py
+    &#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; recommender.py
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; utils
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; __init__.py
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; common.py
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; dbutils.py
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; logs.py
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; priceDropDetectorUtils.py
+    &#9474;&#160;&#160;     &#9500;&#9472;&#9472; recomenderUtils.py
+    &#9474;&#160;&#160;     &#9492;&#9472;&#9472; s3utils.py
+    &#9492;&#9472;&#9472; tests
+        &#9500;&#9472;&#9472; __init__.py
+        &#9500;&#9472;&#9472; config
+        &#9474;&#160;&#160; &#9500;&#9472;&#9472; config.yml
+        &#9474;&#160;&#160; &#9492;&#9472;&#9472; queries.sql
+        &#9500;&#9472;&#9472; test_data
+        &#9474;&#160;&#160; &#9500;&#9472;&#9472; rec_utils_data.pkl
+        &#9474;&#160;&#160; &#9500;&#9472;&#9472; rec_utils_data_result.pkl
+        &#9474;&#160;&#160; &#9500;&#9472;&#9472; recommend_events_data.pkl
+        &#9474;&#160;&#160; &#9500;&#9472;&#9472; recommend_events_data_result.pkl
+        &#9474;&#160;&#160; &#9492;&#9472;&#9472; recommender_data.pkl
+        &#9500;&#9472;&#9472; test_recommenderUtils.py
+        &#9500;&#9472;&#9472; test_system.py
+        &#9492;&#9472;&#9472; tests_utils.py
 
 
 </pre>
@@ -2784,12 +2763,12 @@ Also, I'm picking 12 events, closest to the user.</li>
 </div>
 </div>
 
-<div id="outline-container-org22e35b0" class="outline-2">
-<h2 id="org22e35b0"><span class="section-number-2">3</span> June</h2>
+<div id="outline-container-orgf3dbe2e" class="outline-2">
+<h2 id="orgf3dbe2e"><span class="section-number-2">3</span> June</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org57fa954" class="outline-3">
-<h3 id="org57fa954"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> System Testing: the beginning</h3>
+<div id="outline-container-org7857f89" class="outline-3">
+<h3 id="org7857f89"><span class="section-number-3">3.1</span> <span class="done DONE">DONE</span> System Testing: the beginning</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 We need to integrate system testing in the process, to avoid redundant debugging and production failures.
@@ -2800,8 +2779,8 @@ We need to integrate system testing in the process, to avoid redundant debugging
 </div>
 </div>
 
-<div id="outline-container-org5937efc" class="outline-3">
-<h3 id="org5937efc"><span class="section-number-3">3.2</span> <span class="done DONE">DONE</span> Dev / Prod envs</h3>
+<div id="outline-container-orgc466494" class="outline-3">
+<h3 id="orgc466494"><span class="section-number-3">3.2</span> <span class="done DONE">DONE</span> Dev / Prod envs</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 To automaticlly diferentiate Dev and Prod environment for keeping production database intact and use test db for dev purposes.
@@ -2811,76 +2790,10 @@ To automaticlly diferentiate Dev and Prod environment for keeping production dat
 A function <b><b>get_dev_or_prod_dir</b></b> takes care of the ptask of differentiating between branches, if master then returns prod environment dir, otherwise test production dir. Manual override is possible if we explicitly pass the argument prod=True to the function, in that case it returns the prod. configs/queries.</li>
 </ul>
 </div>
-<div id="outline-container-org3732ce8" class="outline-4">
-<h4 id="org3732ce8"><span class="section-number-4">3.2.1</span> New Structure v2</h4>
-<div class="outline-text-4" id="text-3-2-1">
-<div class="org-src-container">
-<pre class="src src-bash">.
-├── Dockerfile
-├── README.adoc
-├── requirements.txt
-├── resources
-│   ├── artifacts
-│   │   └── credentials.tmpl
-│   ├── config
-│   │   └── config.yml
-│   ├── data
-│   │   ├── docs
-│   │   │   └── database_fields_premium.xlsx
-│   │   ├── dumps
-│   │   └── logs
-│   ├── docker
-│   │   ├── entrypointAD.sh
-│   │   ├── entrypointClean.sh
-│   │   ├── entrypointDeRec.sh
-│   │   ├── entrypointPDD.sh
-│   │   └── entrypointRec.sh
-│   └── queries
-│       ├── cln_queries.sql
-│       ├── pdd_queries.sql
-│       └── rec_queries.sql
-├── setup.py
-├── src
-│   ├── cleaner
-│   │   ├── __init__.py
-│   │   └── cleaner.py
-│   ├── pdd
-│   │   ├── PriceDropDetector.py
-│   │   └── __init__.py
-│   ├── recommender
-│   │   ├── __init__.py
-│   │   ├── anomalyDetector.py
-│   │   └── recommender.py
-│   └── utils
-│       ├── __init__.py
-│       ├── common.py
-│       ├── dbutils.py
-│       ├── logs.py
-│       ├── pricedropdetector_utils.py
-│       ├── recomender_utils.py
-│       └── s3utils.py
-└── tests
-    ├── config
-    │   └── config.yml
-    ├── queries
-    │   ├── cln_queries.sql
-    │   ├── pdd_queries.sql
-    │   └── rec_queries.sql
-    ├── test_data
-    │   ├── rec_utils_data.pkl
-    │   ├── rec_utils_data_result.pkl
-    │   ├── recommend_events_data.pkl
-    │   └── recommend_events_data_result.pkl
-    ├── test_recommenderutils.py
-    ├── test_system.py
-    └── tests_utils.py
-</pre>
 </div>
-</div>
-</div>
-</div>
-<div id="outline-container-orgb1f7b81" class="outline-3">
-<h3 id="orgb1f7b81"><span class="section-number-3">3.3</span> <span class="todo TODO">TODO</span> Small tasks</h3>
+
+<div id="outline-container-orgf8d2e9e" class="outline-3">
+<h3 id="orgf8d2e9e"><span class="section-number-3">3.3</span> <span class="todo TODO">TODO</span> Small tasks</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Take care of Docker after restructuring the project
@@ -2894,14 +2807,14 @@ A function <b><b>get_dev_or_prod_dir</b></b> takes care of the ptask of differen
 <ul class="org-ul">
 <li>mocked test data under tests/test_data</li>
 </ul></li>
-<li>logs dir was putting logs on different locations due to not a very consistent nature of python, right now it's behaviour is consistent and after uploading log to s3 it removes logs files from project dir.</li>
+<li>logs dir was putting logs on different locations due to not a very consistent nature of python, right now it&rsquo;s behaviour is consistent and after uploading log to s3 it removes logs files from project dir.</li>
 <li>Dockerfile: little additions to make it work with new project structure and also read scripts from `resources/docker` dir.</li>
 </ul></li>
 </ul></li>
-<li class="on"><code>[X]</code> Don't remove events that lack location data</li>
+<li class="on"><code>[X]</code> Don&rsquo;t remove events that lack location data</li>
 <li class="on"><code>[X]</code> Add logging to Location Based Recs</li>
 <li class="on"><code>[X]</code> Test dir for logs in s3 bucket</li>
-<li class="on"><code>[X]</code> Add lat/lon to yey_city
+<li class="off"><code>[&#xa0;]</code> Add lat/lon to yey_city and validate or fill (absent data) user location data
 <ul class="org-ul">
 <li>Came across new open source project <a href="https://github.com/valhalla/valhalla">valhalla</a>, which provides number of improvements over Nominatim, such as:
 <ul class="org-ul">
@@ -2910,105 +2823,76 @@ A function <b><b>get_dev_or_prod_dir</b></b> takes care of the ptask of differen
 <li>Route optimization, etc.</li>
 </ul></li>
 </ul></li>
-<li class="on"><code>[X]</code> Alert Frequency: every day/twice a week, add condition to fetch users with alert frequency 2 [twice a week] if date is Monday of Thursday.
-<ul class="org-ul">
-<li><p>
-If day is Monday od Thursday =&gt; fetch users with alter status 2
-</p>
+<li class="off"><code>[&#xa0;]</code> Alert Frequency: every day/twice a week, add condition to fetch users with alert frequency 2 [twice a week] if date is Monday of Thursday.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd98869e" class="outline-4">
+<h4 id="orgd98869e"><span class="section-number-4">3.3.1</span> New Structure v2</h4>
+<div class="outline-text-4" id="text-3-3-1">
 <div class="org-src-container">
-<pre class="src src-sql">select alert_mode, count(*)
-from yey_user
-where alert_mode != 2
-   OR alert_mode ISNULL
-   OR extract(dow from current_date) in (1, 4) -- 1 Monday, 4 - Thursday
-group by alert_mode;
+<pre class="src src-bash">.
+&#9500;&#9472;&#9472; Dockerfile
+&#9500;&#9472;&#9472; README.adoc
+&#9500;&#9472;&#9472; requirements.txt
+&#9500;&#9472;&#9472; resources
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; artifacts
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; credentials.tmpl
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; config
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; config.yml
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; data
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; docs
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; database_fields_premium.xlsx
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; dumps
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; logs
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; docker
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointAD.sh
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointClean.sh
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointDeRec.sh
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; entrypointPDD.sh
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; entrypointRec.sh
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; queries
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; cln_queries.sql
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; pdd_queries.sql
+&#9474;&#160;&#160;     &#9492;&#9472;&#9472; rec_queries.sql
+&#9500;&#9472;&#9472; setup.py
+&#9500;&#9472;&#9472; src
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; cleaner
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; __init__.py
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; cleaner.py
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; pdd
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; PriceDropDetector.py
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; __init__.py
+&#9474;&#160;&#160; &#9500;&#9472;&#9472; recommender
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; __init__.py
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9500;&#9472;&#9472; anomalyDetector.py
+&#9474;&#160;&#160; &#9474;&#160;&#160; &#9492;&#9472;&#9472; recommender.py
+&#9474;&#160;&#160; &#9492;&#9472;&#9472; utils
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; __init__.py
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; common.py
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; dbutils.py
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; logs.py
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; pricedropdetector_utils.py
+&#9474;&#160;&#160;     &#9500;&#9472;&#9472; recomender_utils.py
+&#9474;&#160;&#160;     &#9492;&#9472;&#9472; s3utils.py
+&#9492;&#9472;&#9472; tests
+    &#9500;&#9472;&#9472; config
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; config.yml
+    &#9500;&#9472;&#9472; queries
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; cln_queries.sql
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; pdd_queries.sql
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; rec_queries.sql
+    &#9500;&#9472;&#9472; test_data
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; rec_utils_data.pkl
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; rec_utils_data_result.pkl
+    &#9474;&#160;&#160; &#9500;&#9472;&#9472; recommend_events_data.pkl
+    &#9474;&#160;&#160; &#9492;&#9472;&#9472; recommend_events_data_result.pkl
+    &#9500;&#9472;&#9472; test_recommenderutils.py
+    &#9500;&#9472;&#9472; test_system.py
+    &#9492;&#9472;&#9472; tests_utils.py
 </pre>
 </div>
-<ul class="org-ul">
-<li><p>
-Result, if we change (1, 4) =&gt; (1, 3). 3 is Wednesday, so today and it fetched alert mode 2 data as well.
-</p>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-right" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-right">alert_mode</th>
-<th scope="col" class="org-right">count</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-right">NULL</td>
-<td class="org-right">1139</td>
-</tr>
-
-<tr>
-<td class="org-right">1</td>
-<td class="org-right">3</td>
-</tr>
-
-<tr>
-<td class="org-right">3</td>
-<td class="org-right">3</td>
-</tr>
-
-<tr>
-<td class="org-right">2</td>
-<td class="org-right">45</td>
-</tr>
-</tbody>
-</table></li>
-<li><p>
-A full query with just alert_mode and counts.
-</p>
-<div class="org-src-container">
-<pre class="src src-sql">SELECT u.alert_mode, count(*)
-FROM yey_user u
-         JOIN (SELECT user_id, array_agg(region_id) AS regionlist
-               FROM yey_user_preferred_regions
-               GROUP BY 1) s ON u.id = s.user_id
-         JOIN (SELECT user_id,
-                      array_agg(category_id)                                              AS categorylist,
-                      array_agg(subcategory_id) FILTER (WHERE subcategory_id is not NULL) AS subcategorylist,
-                      max(max_price)                                                      AS max_price,
-                      max(num_tickets)                                                    AS num_tickets
-               FROM yey_user_preferred_categories
-               GROUP BY 1) c ON u.id = c.user_id
-         LEFT JOIN (SELECT user_id,
-                           city_id,
-                           start_date,
-                           end_date
-                    FROM yey_user_destination) as d ON u.id = d.user_id
-         LEFT JOIN (SELECT id, state_id
-                    FROM yey_city
-                             JOIN (SELECT id as state_id,
-                                          shortcut
-                                   FROM yey_state) as ys
-                                  on state = ys.shortcut) as yc ON d.city_id = yc.id
-WHERE u.id NOT IN
-      (SELECT DISTINCT user_id
-       FROM yey_useremailqueue
-       WHERE sent_at IS NULL)  --don't send to users that have a pending email
-  AND (u.alert_mode != 2
-    OR u.alert_mode ISNULL
-    OR extract(dow from current_date) in (1, 4)) -- 1 Monday, 4 - Thursday)
-GROUP BY alert_mode;
-</pre>
-</div></li>
-</ul></li>
-</ul></li>
-<li class="off"><code>[&#xa0;]</code> Driving distance based recommendations:
-<ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Validate or fill (absent data) user location data</li>
-<li class="off"><code>[&#xa0;]</code> Calculate driving distance for the results</li>
-</ul></li>
-</ul>
+</div>
 </div>
 </div>
 </div>
@@ -3025,8 +2909,7 @@ original id is mapped to  duplicate events: yey_eventclean [id] -&gt; yey_eventl
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Giga Chokheli</p>
-<p class="date">Created: 2020-06-10 Wed 14:02</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2020-06-15 ორშ 15:53</p>
 </div>
 </body>
 </html>
