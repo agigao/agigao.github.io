@@ -28,9 +28,10 @@ twitter_username: agigao
 github_username:  agigao
 
 # Build settings
-theme: hitchens-theme
+theme: patdryburgh/hitchens
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 hide_credits: true
 

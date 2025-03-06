@@ -36,3 +36,5 @@ gem "hitchens-theme"
 gem "jekyll-paginate"
 gem "jekyll-sass-converter", "~> 3.0"
 gem "sass-embedded", "~> 1.62"
+gem "jekyll-remote-theme"
+
