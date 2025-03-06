@@ -70,8 +70,6 @@ A president is not a CEO. Citizens are not employees. And international conflict
 The current approach to Ukraine raises fundamental questions about whether deal-making skills can evolve into peacemaking wisdom. History suggests that such evolution is possible, but only when leaders recognize that the true bottom line in governance is not profit but human welfare and the survival of democratic values in a world often hostile to both.
 The wisdom required for this moment goes well beyond any balance sheet. It requires understanding that some things simply cannot be reduced to transactions - chief among them, the lives and hopes of people caught in conflict zones around the world.
 
----
-
 ## A Voice from Beyond
 ### What Christopher Hitchens Might Have Said:
 As we consider the tension between business approaches and the demands of governance, it's worth contemplating how one of our most incisive political commentators might have viewed this fundamental disconnect. Christopher Hitchens, known for his intellectual courage and refusal to suffer what he considered moral foolishness, might have cast this issue in the stark moral terms he often employed:
