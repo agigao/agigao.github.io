@@ -11,7 +11,7 @@ What does it mean when a superpower abandons its allies in their moment of great
 History shows that betrayal between allies is not without precedent-or consequences.
 
 ## Lessons from History: The Price of Broken Promises
-In 1783, King Erekle II of Georgia (then the Kingdom of Kartli and Kakheti) signed the Treaty of Georgievsk with Imperial Russia. This military alliance promised Russian protection against Persian and Ottoman invasions, a commitment made on the foundation of shared Orthodox Christian faith.
+In 1783, King Erekle II of Kingdom of Kartli and Kakheti signed the Treaty of Georgievsk with Imperial Russia. This military alliance promised Russian protection against Persian and Ottoman invasions, a commitment made on the foundation of shared Orthodox Christian faith.
 Yet when Georgia faced its moment of truth in 1795, as Agha Mohammad Khan Qajar led 30,000-40,000 Persian troops against the Georgian capital, Russia was nowhere to be found. Despite desperate pleas for help, Russian forces never arrived. The Battle of Krtsanisi raged for three days from September 8-11, resulting in catastrophic losses-4,000 of Georgia's 5,000 soldiers perished, while the Persians lost approximately 13,000 of their own forces. Afterward, Tbilisi was burned to the ground. Over 15,000 civilians were captured and forcibly relocated to Iran.
 
 Why did Russia abandon its ally? The answer became clear six years later when Russia annexed the weakened Georgian kingdom in 1801, reducing it to a mere province of the Russian Empire.
