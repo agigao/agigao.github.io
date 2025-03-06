@@ -23,7 +23,7 @@ email: giga@chokhe.li
 description: >- # this means to ignore newlines until "baseurl:"
   Spaces Between Answers
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://agigao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chokhe.li" # the base hostname & protocol for your site
 twitter_username: agigao
 github_username:  agigao
 
