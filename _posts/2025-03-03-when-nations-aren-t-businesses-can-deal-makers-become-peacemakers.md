@@ -65,13 +65,15 @@ Perhaps the most promising path forward isn't rejecting business thinking entire
 Corporate leaders who successfully transition to effective governance often do so by expanding their vision from narrow profit metrics to broader measures of success. They understand that the "return on investment" for good governance isn't measured in currency but in human flourishing, stability, and justice.
 
 ## The Wisdom Beyond the Balance Sheet
-The crucial question isn't whether business leaders can govern effectively—many have. Rather, it's whether they can transcend the limitations of transactional thinking to embrace the deeper purposes of statecraft.
+The crucial question isn't whether business leaders can govern effectively-many have. Rather, it's whether they can transcend the limitations of transactional thinking to embrace the deeper purposes of statecraft.
 A president is not a CEO. Citizens are not employees. And international conflicts are not corporate takeovers. When we forget these distinctions, we risk turning statecraft into a series of deals that may look good on paper but fail to create the conditions for lasting peace and human security.
 The current approach to Ukraine raises fundamental questions about whether deal-making skills can evolve into peacemaking wisdom. History suggests that such evolution is possible, but only when leaders recognize that the true bottom line in governance is not profit but human welfare and the survival of democratic values in a world often hostile to both.
-The wisdom required for this moment goes well beyond any balance sheet. It requires understanding that some things simply cannot be reduced to transactions—chief among them, the lives and hopes of people caught in conflict zones around the world.
+The wisdom required for this moment goes well beyond any balance sheet. It requires understanding that some things simply cannot be reduced to transactions - chief among them, the lives and hopes of people caught in conflict zones around the world.
 
-## A Voice from Beyond:
-### What Christopher Hitchens Might Have Said
+---
+
+## A Voice from Beyond
+### What Christopher Hitchens Might Have Said:
 As we consider the tension between business approaches and the demands of governance, it's worth contemplating how one of our most incisive political commentators might have viewed this fundamental disconnect. Christopher Hitchens, known for his intellectual courage and refusal to suffer what he considered moral foolishness, might have cast this issue in the stark moral terms he often employed:
 > **The Merchant's Delusion - When Profit Obscures Principle**: 
 > "The conflation of business acumen with political wisdom represents one of the great intellectual fallacies of our age. This vulgarian notion that statecraft can be reduced to deal-making is not merely misguided; it's an obscenity against historical understanding. The businessman-turned-president views international relations as he might view a distressed property: an opportunity for acquisition rather than an obligation toward justice.
