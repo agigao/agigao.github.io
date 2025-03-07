@@ -73,11 +73,11 @@ The wisdom required for this moment goes well beyond any balance sheet. It requi
 ## A Voice from Beyond
 ### What Christopher Hitchens Might Have Said:
 As we consider the tension between business approaches and the demands of governance, it's worth contemplating how one of our most incisive political commentators might have viewed this fundamental disconnect. Christopher Hitchens, known for his intellectual courage and refusal to suffer what he considered moral foolishness, might have cast this issue in the stark moral terms he often employed:
-> **The Merchant's Delusion - When Profit Obscures Principle**: 
+> **The Merchant's Delusion - When Profit Obscures Principle**:
 > "The conflation of business acumen with political wisdom represents one of the great intellectual fallacies of our age. This vulgarian notion that statecraft can be reduced to deal-making is not merely misguided; it's an obscenity against historical understanding. The businessman-turned-president views international relations as he might view a distressed property: an opportunity for acquisition rather than an obligation toward justice.
-> 
+
 > This sophomoric approach to diplomacy betrays a profound ignorance of what civilization actually requires. The marketplace, for all its virtues, cannot resolve questions of human dignity, nor can it determine when intervention against barbarism becomes morally necessary. There is something both tragic and darkly comic about watching a real estate magnate attempt to broker peace while being utterly indifferent to the historical forces that make peace so elusive.
-> 
+
 > The Ukraine conflict isn't a bankruptcy proceeding where assets can be conveniently redistributed among creditors. It represents a fundamental struggle between democratic self-determination and authoritarian subjugation. When "closing the deal" becomes the sole metric of diplomatic success, we've already conceded the moral ground upon which any meaningful peace must stand.
-> 
+
 > Let's not pretend this is merely a difference in style or approach. It represents nothing less than the marketplace attempting to colonize the realm of ethics - a realm where profit margins have no standing and where ledger books cannot account for human suffering. The businessman believes all problems have a price; the statesman understands some principles are, in fact, priceless."
