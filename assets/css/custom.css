@@ -1,0 +1,16 @@
+/* Georgian Fonts Override */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;700&family=Noto+Serif+Georgian:wght@400;500;700&display=swap');
+
+body, p, li, span {
+  font-family: 'Noto Sans Georgian', 'BPG Nino Mtavruli', 'Sylfaen', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif Georgian', 'BPG Glaho', 'Sylfaen', serif !important;
+}
+
+/* Georgian text specific styling */
+.georgian-text {
+  font-family: 'Noto Sans Georgian', 'BPG Nino Mtavruli', sans-serif;
+  line-height: 1.6;
+}
